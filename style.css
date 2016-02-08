@@ -924,3 +924,84 @@ object {
 .gallery-caption {
 	display: block;
 }
+.bloque{
+	padding:10px;
+}
+.navbar-form .form-control{
+	width:100px;
+	box-shadow: none;
+	webkit-box-shadow: none;
+	background: transparent;
+	border:0;
+}
+.navbar-form .form-control::-webkit-input-placeholder {
+ font-size: 14px;
+ color: #fff;
+}
+.navbar-form .form-control:-moz-placeholder { /* older Firefox*/
+ font-size:14px;
+ color: #fff;
+}
+.navbar-form .form-control::-moz-placeholder { /* Firefox 19+ */ 
+ font-size: 14px;
+ color: #fff 
+} 
+.navbar-form .form-control:-ms-input-placeholder { 
+ font-size: 14px; 
+ color: #fff;
+}
+.navbar-agd{
+	margin-bottom:0; 
+    background-color: #F90000;
+    border-color: #F90000;
+    height: 40px
+}
+.navbar-nav > li > .dropdown-menu,.navbar-nav > li.open{
+	background-color: #AE181D;
+    border-color: #AE181D;
+}
+.navbar-nav > li > .dropdown-menu a{
+	color:#fff;
+}
+.navbar-nav > li > .dropdown-menu a:hover{
+	background-color: #F90000;	
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus{
+	color:#fff;
+	background: #AE181D
+}
+.navbar-default .navbar-nav > li > a{
+	color:#fff;
+	text-transform: uppercase;
+	font-size: 1.2em;
+	margin:15px;
+	padding:0;
+}
+.btn-agd{
+	color:#fff;
+	background-color: transparent;
+	border:0;
+	padding:5px;
+	box-shadow: none;
+}
+footer{
+	background-color: #000;
+}
+footer .nav-footer{
+	list-style: none;
+	margin:10px;
+	margin-left:0;
+	padding: 0;
+}
+footer .nav-footer li a,footer .col-md-2 a{
+	color:#fff;
+	text-transform: uppercase;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{
+	color:#fff;
+}
+.site-content{
+	background: #ddd;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}

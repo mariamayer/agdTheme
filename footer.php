@@ -14,11 +14,27 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'agd' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'agd' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'agd' ), 'agd', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
-		</div><!-- .site-info -->
+		<div class="container">
+			<div class="col-md-12"><a href="<?php get_home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-footer.png"></a></div>
+			<div class="col-md-2">
+				<ul class="nav-footer">
+					<li><a href="#">Afiliate a agd</a></li>
+					<li><a href="#">Institucional</a></li>
+					<li><a href="#">Nuestra lucha</a></li>
+				</ul>
+			</div>
+			<div class="col-md-2">
+				<ul class="nav-footer">
+					<li><a href="#">Servicios</a></li>
+					<li><a href="#">Información general</a></li>
+					<li><a href="#">Contacto</a></li>
+				</ul>
+			</div>
+			<div class="col-md-2"><a href="#">Creditos</a></div>
+		  	<div class="col-md-2"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-cta.png"></div>
+		  	<div class="col-md-2"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-conaduh.png"></div>
+		  	<div class="col-md-2"><img src="<?php echo get_template_directory_uri(); ?>/img/direc-footer.png"></div>
+		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

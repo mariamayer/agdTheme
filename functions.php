@@ -114,9 +114,18 @@ add_action( 'widgets_init', 'agd_widgets_init' );
  * Enqueue scripts and styles.
  */
 function agd_scripts() {
+
+	wp_enqueue_style( 'bootstrap-style', get_template_directory_uri() . '/css/bootstrap.css' );
+
+	wp_enqueue_style( 'icons-style', get_template_directory_uri() . '/css/font-awesome.min.css' );
+
 	wp_enqueue_style( 'agd-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'agd-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
+
+	wp_enqueue_script( 'jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js', array(), '20120206', true );
+
+	wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array(), '20120206', true );
 
 	wp_enqueue_script( 'agd-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 

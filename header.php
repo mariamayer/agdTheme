@@ -24,27 +24,99 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'agd' ); ?></a>
 
-	<header id="masthead" class="site-header" role="banner">
-		<div class="site-branding">
-			<?php
-			if ( is_front_page() && is_home() ) : ?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<?php else : ?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-			<?php
-			endif;
+<header id="masthead" class="site-header" role="banner">
+<div class="container">
+	<div class="col-md-3"><a href="<?php get_home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-header.png"></a></div>
+  	<div class="col-md-3"><img src="<?php echo get_template_directory_uri(); ?>/img/sub-logo-header.png"></div>
+  	<div class="col-md-2 col-md-offset-4"><img src="<?php echo get_template_directory_uri(); ?>/img/direc-header.png"></div>
+</div>
+<nav class="navbar navbar-default navbar-agd">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
 
-			$description = get_bloginfo( 'description', 'display' );
-			if ( $description || is_customize_preview() ) : ?>
-				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
-			<?php
-			endif; ?>
-		</div><!-- .site-branding -->
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Afiliate a agd</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Institucional <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Mesa ejecutiva</a></li>
+            <li><a href="#">Comisiones directivas</a></li>
+            <li><a href="#">Memoria y balance</a></li>
+            <li><a href="#">Estatuto</a></li>
+            <li><a href="#">Nuestra historia</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Nuestra Lucha <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Salario</a></li>
+            <li><a href="#">Ad honorem</a></li>
+            <li><a href="#">Estabilidad</a></li>
+            <li><a href="#">Carrera docente</a></li>
+            <li><a href="#">Género</a></li>
+            <li><a href="#">Jubilación</a></li>
+            <li><a href="#">Derechos humanos</a></li>
+            <li><a href="#">Preuniversitarios</a></li>
+            <li><a href="#">Solidaridad de clase</a></li>
+            <li><a href="#">Democratización y presupuesto UBA</a></li>
+            <li><a href="#">Becarixs</a></li>
+            <li><a href="#">Investigadores</a></li>
+            <li><a href="#">Obra social</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Servicios <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Asesoria legal</a></li>
+            <li><a href="#">Asesoria contable</a></li>
+            <li><a href="#">Memoria y balance</a></li>
+            <li><a href="#">Capacitación docente</a></li>
+            <li><a href="#">Turismo</a></li>
+            <li><a href="#">Naciminetos/unión civil/casamientos</a></li>
+            <li><a href="#">Descuentos</a></li>
+            <li><a href="#">Convenios</a></li>
+            <li><a href="#">Colonia vacaciones</a></li>          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Información General <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Simulador salarial</a></li>
+            <li><a href="#">Recibo de sueldo</a></li>
+            <li><a href="#">Mayores de 65</a></li>
+            <li><a href="#">Asignaciones familiares</a></li>
+            <li><a href="#">Obra social</a></li>
+            <li><a href="#">Convenio colectivo</a></li>
+            <li><a href="#">Caja complementaria</a></li>
+            <li><a href="#">Legislaciones</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+      <ul class="nav navbar-nav social">
+        <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Buscar">
+        </div>
+        <button type="submit" class="btn btn-default btn-agd"><i class="fa fa-search"></i></span></button>
+      </form>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</header><!-- #masthead -->
 
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'agd' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
-
-	<div id="content" class="site-content">
+<div id="content" class="site-content">
