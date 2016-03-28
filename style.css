@@ -42,6 +42,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Media
 	## Captions
 	## Galleries
+
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
@@ -306,7 +307,7 @@ th {
   	background: #fff;
   }
   .noticia.titulo{
-  	background-color: #F90000;
+  	background-color: #e31f26;
   }
   .sub-noticia img,.noticia img{
   	width:100%;
@@ -403,6 +404,69 @@ big {
 	font-size: 125%;
 }
 
+
+.titulo-pag {
+	font-family: 'Khand', sans-serif;
+	font-weight: 700;
+	font-size: 36px;
+	margin: 15px 0px 15px 0px;
+	text-transform: uppercase;
+	}
+
+.subtitulo {
+	font-family: 'Khand', sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.6;
+	margin-top: 30px;
+	margin-left:-20px;
+	text-transform: uppercase;
+	}
+
+
+.subtitulo:before {
+  content: "■";
+  color: black;
+  height: 15px;
+
+	}
+
+.titulo-cont {
+	font-family: 'Khand', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	margin-top: 15px;
+	text-transform: uppercase;
+	}
+
+.lista {
+	padding-left: 0px;
+	list-style:none;	
+	font-family: 'Roboto Condensed', sans-serif;	
+	font-size:14px;
+	}
+
+.cuerpo {
+	font-family: 'Roboto Condensed', sans-serif;	
+	font-size:14px;
+	margin-bottom: 0px;
+	}
+
+.copete {
+	font-family: 'Roboto Condensed', sans-serif;	
+	font-size:16px;
+	line-height: 1.6;
+	margin-bottom: 0px;
+	}	
+
+.vinculo {	
+	font-family: 'Khand', sans-serif;	
+	font-size:16px;
+	text-transform: uppercase;
+	font-weight: 400;
+	}
+	
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -439,13 +503,14 @@ hr {
 	margin-bottom: 1.5em;
 }
 
+
 ul,
 ol {
 	margin: 0 0 1.5em 3em;
 }
 
 ul {
-	list-style: disc;
+	list-style: none;
 }
 
 ol {
@@ -455,8 +520,10 @@ ol {
 li > ul,
 li > ol {
 	margin-bottom: 0;
-	margin-left: 1.5em;
+	margin-left: 0;
 }
+
+
 
 dt {
 	font-weight: bold;
@@ -475,6 +542,53 @@ table {
 	margin: 0 0 1.5em;
 	width: 100%;
 }
+
+.seccion-area {
+    background: white;
+    padding:15px 20px 30px 20px;
+
+}
+
+#toggle-view {
+	list-style:none;	
+	font-family: 'Roboto Condensed', sans-serif;	
+	font-size:11px;
+	margin:0;
+	padding:0;
+	width:800px;
+}
+
+	#toggle-view li {
+		border-bottom:1px solid #ccc;
+		position:relative;
+		cursor:pointer;
+	}
+	
+	#toggle-view h3 {
+		margin:0;
+		font-size: 20px;
+		font-family: 'Khand', sans-serif;
+		font-weight: 400;
+
+	}
+
+	#toggle-view span {
+		position:absolute;
+		right:5px; top:0;
+		color:#e31f26;
+		font-size:16px;
+	}
+	
+	#toggle-view .panel {
+		margin:5px 0;
+		display:none;
+	}	
+
+
+
+
+
+
 
 /*--------------------------------------------------------------
 # Forms
@@ -590,21 +704,22 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+	color: black;
 }
 
 a:visited {
-	color: purple;
+	color:  #696969;
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: midnightblue;
+	color: #696969;
 }
 
 a:focus {
 	outline: thin dotted;
+	color: #e31f26;
 }
 
 a:hover,
@@ -1012,8 +1127,8 @@ object {
 }
 .navbar-agd{
 	margin-bottom:0; 
-    background-color: #F90000;
-    border-color: #F90000;
+    background-color: #e31f26;
+    border-color: #e31f26;
     height: 40px
 }
 .navbar-nav > li > .dropdown-menu,.navbar-nav > li.open{
@@ -1024,7 +1139,7 @@ object {
 	color:#fff;
 }
 .navbar-nav > li > .dropdown-menu a:hover{
-	background-color: #F90000;	
+	background-color: #e31f26;	
 }
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus{
 	color:#fff;
