@@ -6,42 +6,75 @@
  *
  * @package agd
  */
-
+setlocale(LC_ALL,"es_ES");
 ?>
-
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
+	<div class="col-md-9" id="post">
+		<?php setlocale(LC_TIME, "es_ES"); ?>
+		<h4 class="subtitulo"><?php echo strftime("%A %d de %B de %Y",get_the_time('U')); ?></h4>
+		<div class="col-md-12 entry-header">
+			<?php the_title( '<h1 class="titulo-pag">', '</h1>' );?>
+			<?php the_excerpt(); ?>
+		</div>
+		<div class="col-md-12 img">
+			<img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id(get_the_ID(), 'full') );?>">
+		</div>
+		<div class="col-md-9">
+				<p>Foto:<?php echo get_post_meta( get_the_ID(), 'Foto', true ); ?></p>
+		</div>
+		<div class="col-md-3 social">
+			<a href="#"><i class="fa fa-whatsapp"></i></a>
+			<a href="#"><i class="fa fa-facebook"></i></a>
+			<a href="#"><i class="fa fa-twitter"></i></a>
+		</div>
+		<div class="col-md-12">
+			<div class="entry-content">
+				<?php the_content(); ?>
+			</div><!-- .entry-content -->
+		</div>
+		<div class="col-md-12 related">
+		<h2 class="titulo-pag">Notas relacionadas</h2>
 		<?php
-			if ( is_single() ) {
-				the_title( '<h1 class="entry-title">', '</h1>' );
-			} else {
-				the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-			}
+		$related = get_posts( array( 'category__in' => wp_get_post_categories($post->ID), 'numberposts' => 2, 'post__not_in' => array($post->ID) ) );
+		if( $related ) foreach( $related as $post ) {
+		setup_postdata($post); ?>
+			<div class="col-md-6 bloque">
+		  		<a href="<?php echo the_permalink(); ?>"><h2 class="subtitulo"><?php echo the_title(); ?></h2></a>
+		  		<ul class="cats">
+				    <?php 
+				    $post_categories = wp_get_post_categories($post->ID);					     
+					foreach($post_categories as $c){
+					    $cat = get_category( $c );
+					    echo '<li>'.$cat->name.'</li>';
+					}
+				    ?>
+				</ul>
+			</div>
+		<?php }
+		wp_reset_postdata(); ?>
+		</div>
 
-		if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php agd_posted_on(); ?>
-		</div><!-- .entry-meta -->
-		<?php
-		endif; ?>
-	</header><!-- .entry-header -->
-
-	<div class="entry-content">
-		<?php
-			the_content( sprintf(
-				/* translators: %s: Name of current post. */
-				wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'agd' ), array( 'span' => array( 'class' => array() ) ) ),
-				the_title( '<span class="screen-reader-text">"', '"</span>', false )
-			) );
-
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'agd' ),
-				'after'  => '</div>',
-			) );
-		?>
-	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<?php agd_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
-</article><!-- #post-## -->
+	</div>
+	<div class="col-md-3" id="sidebar">
+	<?php 
+		$current_post = $post;
+		for($i = 1; $i <= 3; $i++):
+			$post = get_previous_post(); 
+			setup_postdata($post);
+			if($post!=""){ ?>
+				<div class="col-md-12 bloque">
+			  		<a href="<?php echo the_permalink(); ?>"><h2 class="subtitulo"><?php echo the_title(); ?></h2></a>
+					<ul class="cats">
+					    <?php 
+					    $post_categories = wp_get_post_categories($post->ID);					     
+						foreach($post_categories as $c){
+						    $cat = get_category( $c );
+						    echo '<li>'.$cat->name.'</li>';
+						}
+					    ?>
+					</ul>
+				</div>
+			<?php }      
+		endfor;
+		$post = $current_post;
+    ?> 
+	</div>
