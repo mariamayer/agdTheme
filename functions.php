@@ -163,3 +163,52 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+add_action( 'init', 'create_post_type' );
+function create_post_type() {
+  register_post_type( 'Beneficios',
+    array(
+      'labels' => array(
+        'name' => __( 'Beneficios' ),
+        'singular_name' => __( 'Beneficio' )
+      ),
+      'public' => true,
+      'has_archive' => true,
+      'supports'           => array( 'page-attributes','title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments','post-formats' )
+    )
+  );
+  flush_rewrite_rules();
+}
+add_action( 'init', 'beneficios_support' );
+function beneficios_support() {
+	add_post_type_support('excerpt','thumbnail','custom-fields' );
+}
+
+
+add_action( 'init', 'create_new_taxonomies', 0 );
+function create_new_taxonomies() {
+	$labels = array(
+		'name'              => _x( 'Servicios', 'taxonomy general name' ),
+		'singular_name'     => _x( 'Servicio', 'taxonomy singular name' ),
+		'search_items'      => __( 'Buscar Servicios' ),
+		'all_items'         => __( 'Todos los servicios' ),
+		'parent_item'       => __( 'Servicio Padre' ),
+		'parent_item_colon' => __( 'Servicio Padre:' ),
+		'edit_item'         => __( 'Editar Servicio' ),
+		'update_item'       => __( 'Actualizar Servicio' ),
+		'add_new_item'      => __( 'Agregar Servicio' ),
+		'new_item_name'     => __( 'Nuevo Servicio' ),
+		'menu_name'         => __( 'Servicios' ),
+	);
+
+	$args = array(
+		'hierarchical'      => true,
+		'labels'            => $labels,
+		'show_ui'           => true,
+		'show_admin_column' => true,
+		'query_var'         => true,
+		'rewrite'           => array( 'slug' => 'servicio' ),
+	);
+	register_taxonomy( 'servicio', array( 'beneficios' ), $args );
+}
+
