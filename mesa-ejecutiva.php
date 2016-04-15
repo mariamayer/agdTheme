@@ -11,48 +11,43 @@ get_header(); ?>
 		<h1 class="titulo-pag">MESA EJECUTIVA</h1>
 		<h3 class="titulo-cont"> Miembros titulares </h3>
 			<ul class="lista">			
-				<li>Sec General Ileana celotto </li>
-				<li>Sec general adjunta Gabriel delisio</li>
-				<li>Sec gremial jorgelina matusevicius</li>
-				<li>Sec de organización y actas cristian henkel</li>
-				<li>Sec de acción y previsión social vanesa paila ciolli</li>
-				<li>Sec de hacienda y administración Antonio Rosselló</li>
-				<li>Sec de prensa y comunicación Santiago gandara castro</li>
-				<li>Sec de generos y diversidad sexual maria laura carboni</li>
-				<li>Sec de asuntos académicos e investigación anibal szapiro</li>
-				<li>Sec de salud, medio ambiente de trabajo y bienes comunes pablo de cristóforis</li>
-				<li>Primera vocalía Gladys Perri</li>
-				<li>Segunda vocalía Ariel Slipak</li>
+
+				<li>Sec General Ileana Celotto</li>
+				<li>Sec General Adjunta Gabriel Delisio</li>
+				<li>Sec Gremial Jorgelina Matusevicius</li>
+				<li>Sec de Organización y Actas Cristian Henkel</li>
+				<li>Sec de Acción y Previsión Social Vanesa Paila Ciolli</li>
+				<li>Sec de Hacienda y Administración Antonio Rosselló</li>
+				<li>Sec de Prensa y Comunicación Santiago Gandara Castro</li>
+				<li>Sec de derechos Humanos Nestor Correa</li>
+				<li>Sec de Generos y Diversidad Sexual Maria Laura Carboni</li>
+				<li>Sec de Asuntos Académicos E Investigación Anibal Szapiro</li>
+				<li>Sec de Salud, Medio Ambiente de Trabajo y Bienes Comunes Pablo de Cristóforis</li>
+				<li>Primera Vocalía Gladys Perri</li>
+				<li>Segunda Vocalía Ariel Slipak</li>
+
 			</ul>
 		<h3 class="titulo-cont"> Miembros suplentes </h3>
 			<ul class="lista">				
-				<li>Sec General Ileana celotto </li>
-				<li>Sec general adjunta Gabriel delisio</li>
-				<li>Sec gremial jorgelina matusevicius</li>
-				<li>Sec de organización y actas cristian henkel</li>
-				<li>Sec de acción y previsión social vanesa paila ciolli</li>
-				<li>Sec de hacienda y administración Antonio Rosselló</li>
-				<li>Sec de prensa y comunicación Santiago gandara castro</li>
-				<li>Sec de generos y diversidad sexual maria laura carboni</li>
-				<li>Sec de asuntos académicos e investigación anibal szapiro</li>
-				<li>Sec de salud, medio ambiente de trabajo y bienes comunes pablo de cristóforis</li>
-				<li>Primera vocalía Gladys Perri</li>
-				<li>Segunda vocalía Ariel Slipak</li>
+				<li>Sec Gremial Suplente Adrián Pulleiro</li>
+				<li>Sec de Organización y Actas Suplente Graciela Molle</li>
+				<li>Sec de Acción y Previsión Social Suplente Martín Ogando</li>
+				<li>Sec de Hacienda y Administración Suplente Damian Molina Torres</li>
+				<li>Sec de Prensa y Comunicación Suplente Daniel Duarte</li>
+				<li>Sec de derechos Humanos Suplente Rubén Rojas Breu</li>
+				<li>Sec de Generos y Diversidad Sexual Suplente Fabiola Ferro</li>
+				<li>Sec de Asuntos Académicos E Investigación Suplente Tamara Perelmuter</li>
+				<li>Sec de Salud, Medio Ambiente de Trabajo y Bienes Comunes Suplente Renata Menendez Helman</li>
+				<li>Primera Vocalía Suplente José Castillo</li>
+				<li>Segunda Vocalía Suplente Cecilia Piérola</li>
+
 			</ul>
 		<h3 class="titulo-cont"> Comisión revisora de cuentas </h3>
 			<ul class="lista">				
-				<li>Sec General Ileana celotto </li>
-				<li>Sec general adjunta Gabriel delisio</li>
-				<li>Sec gremial jorgelina matusevicius</li>
-				<li>Sec de organización y actas cristian henkel</li>
-				<li>Sec de acción y previsión social vanesa paila ciolli</li>
-				<li>Sec de hacienda y administración Antonio Rosselló</li>
-				<li>Sec de prensa y comunicación Santiago gandara castro</li>
-				<li>Sec de generos y diversidad sexual maria laura carboni</li>
-				<li>Sec de asuntos académicos e investigación anibal szapiro</li>
-				<li>Sec de salud, medio ambiente de trabajo y bienes comunes pablo de cristóforis</li>
-				<li>Primera vocalía Gladys Perri</li>
-				<li>Segunda vocalía Ariel Slipak</li>
+				<li>1° Titular Hector Garcia</li>
+				<li>2° Titular Martín Kalos</li>
+				<li>3° Titular Carolina Fernandez</li>
+				<li>Suplente Pablo Jaitte</li>
 			</ul>
 
 

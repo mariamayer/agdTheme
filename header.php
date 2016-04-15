@@ -16,7 +16,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-<link href='https://fonts.googleapis.com/css?family=Khand:700,600,500' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Khand:700,600,500,400' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
 
 
@@ -29,9 +29,15 @@
 
 <header id="masthead" class="site-header" role="banner">
 <div class="container">
-	<div class="col-md-3"><a href="<?php get_home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-header.png"></a></div>
-  	<div class="col-md-3"><img src="<?php echo get_template_directory_uri(); ?>/img/sub-logo-header.png"></div>
-  	<div class="col-md-2 col-md-offset-4"><img src="<?php echo get_template_directory_uri(); ?>/img/direc-header.png"></div>
+	<div class="col-md-4"><a href="<?php get_home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-header.png"></a></div>
+  	<div class="col-md-4"><img src="<?php echo get_template_directory_uri(); ?>/img/sub-logo-header.png"></div>
+  	<div class="col-md-4">
+      <ul class="head-contacto">
+        <li>Chile 2181 CABA </li>
+        <li>TEL 4941 6311/6337</li>
+        <li>adg@sociales.uba.ar</li>
+      </ul>
+        </div>
 </div>
 <nav class="navbar navbar-default navbar-agd">
   <div class="container">
@@ -80,15 +86,13 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Servicios <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Asesoria legal</a></li>
-            <li><a href="#">Asesoria contable</a></li>
+            <li><a href="#">Asesoria legal y contable</a></li>
             <li><a href="#">Memoria y balance</a></li>
             <li><a href="#">Capacitación docente</a></li>
-            <li><a href="#">Turismo</a></li>
-            <li><a href="#">Naciminetos/unión civil/casamientos</a></li>
-            <li><a href="#">Descuentos</a></li>
-            <li><a href="#">Convenios</a></li>
-            <li><a href="#">Colonia vacaciones</a></li>          </ul>
+            <li><a href="#">Turismo y colonia de vacaciones</a></li>
+            <li><a href="#">Nacimientos/unión civil/casamientos</a></li>
+            <li><a href="#">Descuentos y convenios</a></li>
+    </ul>
         </li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Información General <span class="caret"></span></a>
@@ -113,7 +117,7 @@
       </ul>
       <form class="navbar-form navbar-left" role="search">
         <div class="form-group">
-          <input type="text" class="form-control" placeholder="Buscar">
+          <input type="text" class="form-control" placeholder="buscar">
         </div>
         <button type="submit" class="btn btn-default btn-agd"><i class="fa fa-search"></i></span></button>
       </form>
