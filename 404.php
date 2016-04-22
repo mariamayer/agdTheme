@@ -9,16 +9,19 @@
 
 get_header(); ?>
 
+	<div class="container body">
+
+	<section class="seccion-area">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
 			<section class="error-404 not-found">
 				<header class="page-header">
-					<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'agd' ); ?></h1>
+					<h1 class="page-title"><?php esc_html_e( 'Página no encontrada', 'agd' ); ?></h1>
 				</header><!-- .page-header -->
 
 				<div class="page-content">
-					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'agd' ); ?></p>
+					<p><?php esc_html_e( 'No se encontraron contenidos. Puede probar con el buscador o en las categorías', 'agd' ); ?></p>
 
 					<?php
 						get_search_form();
@@ -30,7 +33,7 @@ get_header(); ?>
 					?>
 
 					<div class="widget widget_categories">
-						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'agd' ); ?></h2>
+						<h2 class="widget-title"><?php esc_html_e( 'Categorías más activas', 'agd' ); ?></h2>
 						<ul>
 						<?php
 							wp_list_categories( array(
@@ -48,10 +51,7 @@ get_header(); ?>
 						endif;
 
 						/* translators: %1$s: smiley */
-						$archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'agd' ), convert_smilies( ':)' ) ) . '</p>';
-						the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
-
-						the_widget( 'WP_Widget_Tag_Cloud' );
+						
 					?>
 
 				</div><!-- .page-content -->
@@ -59,6 +59,8 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+	</section>
 
+	</div>
 <?php
 get_footer();

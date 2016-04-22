@@ -15,10 +15,10 @@ get_header(); ?>
 
 		<hr>
 
-		 <img src="http://localhost/sitios/wordpress/agduba/wp-content/uploads/sites/2/2016/04/recibo-sueldo.jpg" alt="Recibo de sueldo"> 
+		 <img src="http://localhost/sitios/wordpress/agduba/wp-content/uploads/sites/2/2016/04/recibo-sueldo.jpg" alt="Recibo de sueldo" width="800"> 
 		<hr>
 		<br>
-		<ul id="toggle-view">
+		<ul id="toggle-view" style="margin: 15px;">
 		<li>
 			<h3>1. Datos personales</h3>
 			<span>+</span>

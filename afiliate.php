@@ -15,8 +15,10 @@ get_header(); ?>
 AGD es el único sindicato de la UBA que defiende los derechos de las y los docentes preuniversitarios y universitarios. Lucha por un salario igual a la canasta familiar, por estabilidad laboral y mejores condiciones de trabajo y por una Universidad pública, gratuita, científica. 
 Al gremio lo encontrás cada día en tu lugar de trabajo, en las marchas, en las asambleas y en cada lucha por las reivindicaciones de los trabajadores docentes de la UBA:  por la paritaria, contra las cesantías de los jubilables, por la estabilidad de los docentes del CBC y de todas las unidades académicas, por el salario para los ad honorem, en apoyo a la lucha de nuestros becarios. También como parte de la lucha por las libertades democráticas y los DDHH. Y por la solidaridad concreta y movilizada en unión con los docentes de los restantes niveles y los trabajadores en general que dan batalla por sus derechos.
  AGD plantea la independencia política de las autoridades y el Estado, defiende la democracia sindical construyendo cada mandato en asamblea de afiliados confronta con las burocracias sindicales, se opone por el vértice a las burocracias que dan la espalda al movimiento docente y entregan nuestras condiciones de trabajo.
-Porque necesitamos fortalecer la AGD como instrumento para avanzar y conquistar nuestras reivindicaciones. Afiliate y afiliá a la AGD. <br>
-Para afiliarse a AGD-UBA es necesario completar el siguiente formulario y nos contactaremos </p>
+Porque necesitamos fortalecer la AGD como instrumento para avanzar y conquistar nuestras reivindicaciones. Afiliate y afiliá a la AGD.</p> <br>
+
+<h4>Para afiliarse a AGD-UBA es necesario completar el siguiente formulario y nos contactaremos </h4>
+<br>
 
 				<form action="postulacion.php" method="post"> 
 					<div >

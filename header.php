@@ -54,40 +54,38 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="#">Afiliate a agd</a></li>
+        <li><a href="formulario-afiliacion">Afiliate a agd</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Institucional <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Mesa ejecutiva</a></li>
-            <li><a href="#">Comisiones directivas</a></li>
-            <li><a href="#">Memoria y balance</a></li>
-            <li><a href="#">Estatuto</a></li>
-            <li><a href="#">Nuestra historia</a></li>
+            <li><a href="/sitios/wordpress/agduba/mesa-ejecutiva/">Mesa ejecutiva</a></li>
+            <li><a href="/sitios/wordpress/agduba/comisiones/">Comisiones directivas</a></li>
+            <li><a href="/sitios/wordpress/agduba/memoria-y-balance/">Memoria y balance</a></li>
+            <li><a href="/sitios/wordpress/agduba/estatuto/">Estatuto</a></li>
+            <li><a href="/sitios/wordpress/agduba/nuestra-historia/">Nuestra historia</a></li>
           </ul>
         </li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Nuestra Lucha <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Salario</a></li>
-            <li><a href="#">Ad honorem</a></li>
-            <li><a href="#">Estabilidad</a></li>
-            <li><a href="#">Carrera docente</a></li>
-            <li><a href="#">Género</a></li>
-            <li><a href="#">Jubilación</a></li>
-            <li><a href="#">Derechos humanos</a></li>
-            <li><a href="#">Preuniversitarios</a></li>
-            <li><a href="#">Solidaridad de clase</a></li>
-            <li><a href="#">Democratización y presupuesto UBA</a></li>
-            <li><a href="#">Becarixs</a></li>
-            <li><a href="#">Investigadores</a></li>
-            <li><a href="#">Obra social</a></li>
+            <li><a href="/sitios/wordpress/agduba/category/salario/">Salario</a></li>
+            <li><a href="/sitios/wordpress/agduba/category/ad-honorem/">Ad honorem</a></li>
+            <li><a href="/sitios/wordpress/agduba/category/genero/">Género y diversidad sexual</a></li>
+            <li><a href="/sitios/wordpress/agduba/category/jubilacion/">Jubilación</a></li>
+            <li><a href="/sitios/wordpress/agduba/category/derechos-humanos/">DD HH y libertades democráticas</a></li>
+            <li><a href="/sitios/wordpress/agduba/category/preuniversitarios/">Preuniversitarios</a></li>
+            <li><a href="/sitios/wordpress/agduba/category/democratizacion/">Democratización</a></li>
+            <li><a href="/sitios/wordpress/agduba/category/becarixs-investigadores/">Becarixs e investigadores</a></li>
+            <li><a href="/sitios/wordpress/agduba/category/libertad-sindical/">Libertad sindical</a></li>            
+            <li><a href="/sitios/wordpress/agduba/category/obra-social/">Obra social</a></li>
+            <li><a href="/sitios/wordpress/agduba/category/presupuesto-universitario/">Presupuesto Universitario</a></li>
+
           </ul>
         </li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Servicios <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">Asesoria legal y contable</a></li>
-            <li><a href="#">Memoria y balance</a></li>
             <li><a href="#">Capacitación docente</a></li>
             <li><a href="#">Turismo y colonia de vacaciones</a></li>
             <li><a href="#">Nacimientos/unión civil/casamientos</a></li>
@@ -97,8 +95,8 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Información General <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Simulador salarial</a></li>
-            <li><a href="#">Recibo de sueldo</a></li>
+            <li><a href="/sitios/wordpress/agduba/grilla-salarial/">Simulador salarial</a></li>
+            <li><a href="/sitios/wordpress/agduba/recibo-de-sueldo/">Recibo de sueldo</a></li>
             <li><a href="#">Mayores de 65</a></li>
             <li><a href="#">Asignaciones familiares</a></li>
             <li><a href="#">Obra social</a></li>
