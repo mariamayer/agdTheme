@@ -1424,6 +1424,13 @@ footer .nav-footer li a,footer .col-md-2 a{
 	padding:0;
 	margin-left:10px;
 }
+.categoria #grilla .bloque .img{
+	padding:0;
+}
+.categoria #grilla .bloque .titulo{
+	min-height: 100px;
+	margin-top:20px;
+}
 .categoria #grilla .bloque .subtitulo{
 	margin-left:-15px;
 	color:#fff;

@@ -15,7 +15,7 @@ get_header(); ?>
 
 		<hr>
 
-		 <img src="http://localhost/sitios/wordpress/agduba/wp-content/uploads/sites/2/2016/04/recibo-sueldo.jpg" alt="Recibo de sueldo" width="800"> 
+		 <img src="http://localhost<?php echo get_home_url(); ?>/wp-content/uploads/sites/2/2016/04/recibo-sueldo.jpg" alt="Recibo de sueldo" width="800"> 
 		<hr>
 		<br>
 		<ul id="toggle-view" style="margin: 15px;">

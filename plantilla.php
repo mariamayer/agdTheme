@@ -1,6 +1,6 @@
 <?php
 /*
-Template name: Descuentos
+Template name: Plantilla
 */
 get_header(); ?>
 

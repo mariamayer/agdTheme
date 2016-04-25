@@ -25,8 +25,12 @@ $i=1;
 		<?php
 		while ( have_posts() && $i<3 ) : the_post(); ?>
 		<div class="col-md-4 bloque">
-			<a class="subtitulo" href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute();?>"><?php the_title(); ?></a>
-			<img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id(get_the_ID(), 'full') );?>">
+			<div class="col-md-12 titulo">
+				<a class="subtitulo" href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to<?php the_title_attribute();?>"><?php the_title(); ?></a>
+			</div>
+			<div class="col-md-12 img">
+				<img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id(get_the_ID(), 'full') );?>">
+			</div>
 		</div>
 		<?php endwhile; ?>
 

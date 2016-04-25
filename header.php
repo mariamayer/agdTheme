@@ -29,7 +29,7 @@
 
 <header id="masthead" class="site-header" role="banner">
 <div class="container">
-	<div class="col-md-4"><a href="<?php get_home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-header.png"></a></div>
+	<div class="col-md-4"><a href="<?php echo get_home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-header.png"></a></div>
   	<div class="col-md-4"><img src="<?php echo get_template_directory_uri(); ?>/img/sub-logo-header.png"></div>
   	<div class="col-md-4">
       <ul class="head-contacto">
@@ -58,27 +58,27 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Institucional <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="/sitios/wordpress/agduba/mesa-ejecutiva/">Mesa ejecutiva</a></li>
-            <li><a href="/sitios/wordpress/agduba/comisiones/">Comisiones directivas</a></li>
-            <li><a href="/sitios/wordpress/agduba/memoria-y-balance/">Memoria y balance</a></li>
-            <li><a href="/sitios/wordpress/agduba/estatuto/">Estatuto</a></li>
-            <li><a href="/sitios/wordpress/agduba/nuestra-historia/">Nuestra historia</a></li>
+            <li><a href="<?php echo get_home_url(); ?>/mesa-ejecutiva/">Mesa ejecutiva</a></li>
+            <li><a href="<?php echo get_home_url(); ?>/comisiones/">Comisiones directivas</a></li>
+            <li><a href="<?php echo get_home_url(); ?>/memoria-y-balance/">Memoria y balance</a></li>
+            <li><a href="<?php echo get_home_url(); ?>/estatuto/">Estatuto</a></li>
+            <li><a href="<?php echo get_home_url(); ?>/nuestra-historia/">Nuestra historia</a></li>
           </ul>
         </li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Nuestra Lucha <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="/sitios/wordpress/agduba/category/salario/">Salario</a></li>
-            <li><a href="/sitios/wordpress/agduba/category/ad-honorem/">Ad honorem</a></li>
-            <li><a href="/sitios/wordpress/agduba/category/genero/">Género y diversidad sexual</a></li>
-            <li><a href="/sitios/wordpress/agduba/category/jubilacion/">Jubilación</a></li>
-            <li><a href="/sitios/wordpress/agduba/category/derechos-humanos/">DD HH y libertades democráticas</a></li>
-            <li><a href="/sitios/wordpress/agduba/category/preuniversitarios/">Preuniversitarios</a></li>
-            <li><a href="/sitios/wordpress/agduba/category/democratizacion/">Democratización</a></li>
-            <li><a href="/sitios/wordpress/agduba/category/becarixs-investigadores/">Becarixs e investigadores</a></li>
-            <li><a href="/sitios/wordpress/agduba/category/libertad-sindical/">Libertad sindical</a></li>            
-            <li><a href="/sitios/wordpress/agduba/category/obra-social/">Obra social</a></li>
-            <li><a href="/sitios/wordpress/agduba/category/presupuesto-universitario/">Presupuesto Universitario</a></li>
+            <li><a href="<?php echo get_home_url(); ?>/category/salario/">Salario</a></li>
+            <li><a href="<?php echo get_home_url(); ?>/category/ad-honorem/">Ad honorem</a></li>
+            <li><a href="<?php echo get_home_url(); ?>/category/genero/">Género y diversidad sexual</a></li>
+            <li><a href="<?php echo get_home_url(); ?>/category/jubilacion/">Jubilación</a></li>
+            <li><a href="<?php echo get_home_url(); ?>/category/derechos-humanos/">DD HH y libertades democráticas</a></li>
+            <li><a href="<?php echo get_home_url(); ?>/category/preuniversitarios/">Preuniversitarios</a></li>
+            <li><a href="<?php echo get_home_url(); ?>/category/democratizacion/">Democratización</a></li>
+            <li><a href="<?php echo get_home_url(); ?>/category/becarixs-investigadores/">Becarixs e investigadores</a></li>
+            <li><a href="<?php echo get_home_url(); ?>/category/libertad-sindical/">Libertad sindical</a></li>            
+            <li><a href="<?php echo get_home_url(); ?>/category/obra-social/">Obra social</a></li>
+            <li><a href="<?php echo get_home_url(); ?>/category/presupuesto-universitario/">Presupuesto Universitario</a></li>
 
           </ul>
         </li>
@@ -95,8 +95,8 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Información General <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="/sitios/wordpress/agduba/grilla-salarial/">Simulador salarial</a></li>
-            <li><a href="/sitios/wordpress/agduba/recibo-de-sueldo/">Recibo de sueldo</a></li>
+            <li><a href="<?php echo get_home_url(); ?>/grilla-salarial/">Simulador salarial</a></li>
+            <li><a href="<?php echo get_home_url(); ?>/recibo-de-sueldo/">Recibo de sueldo</a></li>
             <li><a href="#">Mayores de 65</a></li>
             <li><a href="#">Asignaciones familiares</a></li>
             <li><a href="#">Obra social</a></li>
