@@ -18,7 +18,7 @@
 			<div class="col-md-12"><a href="<?php get_home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-footer.png"></a></div>
 			<div class="col-md-2">
 				<ul class="nav-footer">
-					<li><a href="#">Afiliate a agd</a></li>
+					<li><a href="<?php echo get_home_url(); ?>/formulario-afiliacion/">Afiliate a agd</a></li>
 					<li><a href="#">Institucional</a></li>
 					<li><a href="#">Nuestra lucha</a></li>
 				</ul>
@@ -41,7 +41,7 @@
 		  		<ul class="footer-contacto">
        			 <li>Chile 2181 CABA </li>
        			 <li>TEL 4941 6311/6337</li>
-        		 <li>adg@sociales.uba.ar</li>
+        		<li><a href="mailto:adg@sociales.uba.ar" target="_top">adg@sociales.uba.ar</a></li>
       			</ul>
       		</div>
 		</div>

@@ -35,7 +35,7 @@
       <ul class="head-contacto">
         <li>Chile 2181 CABA </li>
         <li>TEL 4941 6311/6337</li>
-        <li>adg@sociales.uba.ar</li>
+        <li><a href="mailto:adg@sociales.uba.ar" target="_top">adg@sociales.uba.ar</a></li>
       </ul>
         </div>
 </div>
@@ -54,7 +54,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="formulario-afiliacion">Afiliate a agd</a></li>
+        <li><a href="<?php echo get_home_url(); ?>/formulario-afiliacion/">Afiliate a agd</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Institucional <span class="caret"></span></a>
           <ul class="dropdown-menu">
