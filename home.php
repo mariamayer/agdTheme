@@ -50,7 +50,9 @@ get_header(); ?>
 				</p>
 		  	</div>
 		  	<div class="col-md-12 noticia img">
+		  		<?php if(wp_get_attachment_url( get_post_thumbnail_id(get_the_ID(), 'full'))!='') {?>
 		  		<img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id(get_the_ID(), 'full') );?>">
+		  		<?php } ?>
 		  	</div>
 		</div>
 
@@ -58,41 +60,29 @@ get_header(); ?>
 		}
 		}
 		wp_reset_postdata(); ?>
-	<div class="col-md-8 bloque">
-		<ul class="rslides">
-		  <li>
-		  	<div class="col-md-7 sub-noticia">
-		  		<h3 class="cat-video"> Videos y entrevistas </h3>
-				<h2 class="titulo-video">Entrevistas</h2>
-		  		<p class="cuerpo-video">Santiago Gandara, secretario de prensa de AGD UBA, en el corte de calle y movilizacion a rectorado de becarios y la asamblea de medicina. </p>
-		  	</div>
-		  	<div class="col-md-5 sub-noticia">
-		  		<img src="<?php echo get_template_directory_uri(); ?>/img/prueba.png">
-		  	</div>
-		  </li>
-		  <li>
-			  <div class="col-md-7 sub-noticia">
-		  		<h3 class="cat-video"> Videos y entrevistas </h3>
-				<h2 class="titulo-video">Entrevistas</h2>
-		  		<p class="cuerpo-video">Santiago Gandara, secretario de prensa de AGD UBA, en el corte de calle y movilizacion a rectorado de becarios y la asamblea de medicina. </p>
-		  	</div>
-		  	<div class="col-md-5 sub-noticia">
-		  		<img src="<?php echo get_template_directory_uri(); ?>/img/prueba.png">
-		  	</div>
-		  </li>
-		  <li>
-		  	<div class="col-md-7 sub-noticia">
-		  		<h3 class="cat-video"> Videos y entrevistas </h3>
-				<h2 class="titulo-video">Entrevistas</h2>
-		  		<p class="cuerpo-video">Santiago Gandara, secretario de prensa de AGD UBA, en el corte de calle y movilizacion a rectorado de becarios y la asamblea de medicina. </p>
-		  	</div>
-		  	<div class="col-md-5 sub-noticia">
-		  		<img src="<?php echo get_template_directory_uri(); ?>/img/prueba.png">
-		  	</div>
-		  </li>
-		  
-		</ul>
-	</div>
+
+		<div class="col-md-8 bloque">
+			<ul class="rslides">
+			<?php $videos = new WP_Query(  array( 'category_name' => 'videos','posts_per_page'=> 3 ) );
+				if ($videos->have_posts()) :
+				// The Loop
+				while ( $videos->have_posts() ) : $videos->the_post();
+					echo '<li>
+		  					<div class="col-md-7 sub-noticia">
+		  						<h3 class="cat-video"> Videos y entrevistas </h3>';
+		  			echo '<a href="'.get_the_permalink().'"><h2 class="titulo-video">'. get_the_title() .'</h2></a><p class="cuerpo-video">'. get_the_excerpt() .'</p>';
+					echo '</div>
+					<div class="col-md-5 sub-noticia">';
+					$url=wp_get_attachment_image_src( get_post_thumbnail_id());
+					echo '<a href="'.get_the_permalink().'"><img src="'.$url[0].'"></a>';
+					echo '</div>
+					</li>';
+				endwhile;
+				endif; ?>
+			</ul>
+		</div>
+
+
 	<div class="col-md-4 bloque">
 		<div class="col-md-12 bloque noticia link" style="padding:0px">
 			<h3 class="cat-video"> Encuestas y petitorios </h3>

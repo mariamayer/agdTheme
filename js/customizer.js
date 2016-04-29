@@ -11,5 +11,8 @@
 		$(".rslides").responsiveSlides({
 			pager: true
 		});
+		$( "#toggle-view li" ).click(function() {
+		  $( this ).toggleClass( "toggle" );
+		});
 	});
 } )( jQuery );
