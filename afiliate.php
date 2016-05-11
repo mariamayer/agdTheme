@@ -21,7 +21,7 @@ Porque necesitamos fortalecer la AGD como instrumento para avanzar y conquistar 
 <br>
 
 				<form action="postulacion.php" method="post"> 
-					<div >
+					<div>
 						<div class="col-md-3 afiliacion">
 							<p><label class="afiliacion">Apellido</label> <br>
 							<input class="a1" type="text" name="apellido" required />
@@ -36,15 +36,15 @@ Porque necesitamos fortalecer la AGD como instrumento para avanzar y conquistar 
 
 					
 						<div class="col-md-3 afiliacion">
-							<p><label class="afiliacion">Telefono</label> <br>
+							<p><label class="afiliacion">Teléfono</label> <br>
 							<input class="a1" type="text" name="telefono" required />
 							</p>
 						</div>
 						
 
 						<div class="col-md-3 afiliacion">
-							<p><label class="afiliacion">celular</label> <br>
-							<input class="a1" type="text" name="celular" required />
+							<p><label class="afiliacion">Correo electrónico</label> <br>
+							<input class="a1" type="text" name="correo" required />
 							</p><br>
 						</div>
 						<br>
@@ -64,11 +64,11 @@ Porque necesitamos fortalecer la AGD como instrumento para avanzar y conquistar 
 
 						<div class="col-md-3">
 							<p>
-								 <select name="dedicacion" class="cargos">
+								 <select name="dedicacion" class="dedicacion">
    									<option value="ded01">Dedicacion01</option>
-   									<option value="ded01">Cat02</option>
-   									<option value="ded01">Cat03</option>
-   									<option value="ded01">Cat04</option>
+   									<option value="ded01">Dedicacion02</option>
+   									<option value="ded01">Dedicacion03</option>
+   									<option value="ded01">Dedicacion04</option>
   								</select>
 							</p>
 						</div>
@@ -81,19 +81,22 @@ Porque necesitamos fortalecer la AGD como instrumento para avanzar y conquistar 
 
 						<div class="col-md-3">
 							<p>
-								 <select name="facultad" class="cargos">
+								 <select name="facultad" class="facultad">
    									<option value="fac01">Facultad01</option>
-   									<option value="fac2">Cat02</option>
-   									<option value="fac03">Cat03</option>
-   									<option value="fac04">Cat04</option>
+   									<option value="fac2">Facultad02</option>
+   									<option value="fac03">Facultad03</option>
+   									<option value="fac04">Facultad04</option>
   								</select>
 							</p>
 		
-							</div>
-		
+						</div>
+						
 
+						<div>
 						<p><input class="radio" type="checkbox" name="acepto" required />Acepto la Política de Confidencialidad y Protección de Datos Personales</p>
 						<label class="a1"><input class="a1 enviar" type="submit" name="submit" value="Enviar" /></label>
+						</div>
+
 
 					</div>
 				</form>
