@@ -1,6 +1,6 @@
 <?php
 /*
-Template name: Plantilla
+Template name: Mayores
 */
 get_header(); ?>
 

@@ -16,9 +16,10 @@ setlocale(LC_ALL,"es_ES");
 			<?php the_excerpt(); ?>
 		</div>
 		<div class="col-md-12 img">
-		<?php if(wp_get_attachment_url( get_post_thumbnail_id(get_the_ID(), 'full'))!='') {?>
+		<?php $categories = get_the_category();
+		if(wp_get_attachment_url( get_post_thumbnail_id(get_the_ID(), 'full'))!='' or $categories[0]->name=='Videos') {?>
 			<img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id(get_the_ID(), 'full') );?>">
-		<?php } ?>
+		<?php }?>
 		</div>
 		<div class="col-md-9">
 				<?php 
