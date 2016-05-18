@@ -263,6 +263,15 @@ td,
 th {
 	padding: 0;
 }
+.success{
+	text-align: center;
+    font-size: 25px;
+    color: green;
+    border: 2px solid green;
+    width: 50%;
+    left: 25%;
+    position: relative;
+}
 /*! http://responsiveslides.com v1.54 by @viljamis */
 
 .rslides {
@@ -1078,7 +1087,10 @@ a:active {
 	width: 15em;
 }
 
-
+.afiliacion p input[type="checkbox"]{
+    display: inline-block;
+    margin: 10px;
+}
 
 .cargos{
 	width: 10em;

@@ -4,23 +4,41 @@ Template name: Afiliate
 */
 get_header(); ?>
 
+<?php
+if(isset($_POST['submit'])){
+	$to = 'nicolascambon@live.com.ar';
+	$subject = 'Formulario Afiliacion';
+	$body.= '<h2>Datos recibidos formulario afiliacion</h2>';
+	$body.= '<p>Nombre: '.$_POST['nombre'];
+	$body.= '<br>Apellido: '.$_POST['apellido'];
+	$body.= '<br>Telefono: '.$_POST['telefono'];
+	$body.= '<br>Correo: '.$_POST['correo'];
+	$body.= '<br>CARGOS DOCENTES EN UBA';
+	$body.= '<br>Categoria: '.$_POST['categoria'];
+	$body.= '<br>Dedicacion: '.$_POST['dedicacion'];
+	$body.= '<br>Legajo: '.$_POST['legajo'];
+	$body.= '<br>Facultad: '.$_POST['facultad'].'</p>';
+	$headers = array('Content-Type: text/html; charset=UTF-8');
+	wp_mail( $to, $subject, $body, $headers );
+	echo '<p class="success">Formulario enviado con éxito</p>';
+}
+?>
+
 <div class="container body">
-
-
-	<div class="col-md-12">
+	<div class="col-md-12 afiliacion">
 		<section class="seccion-area">
 		<span class="subtitulo"> Formulario </span>
 		<h1 class="titulo-pag">Formulario de pre-afiliación</h1>
-		<p class="copete"><strong>Proponé la afiliación a tus compañeros de cátedra, laboratorio o escuela. </strong>
-AGD es el único sindicato de la UBA que defiende los derechos de las y los docentes preuniversitarios y universitarios. Lucha por un salario igual a la canasta familiar, por estabilidad laboral y mejores condiciones de trabajo y por una Universidad pública, gratuita, científica. 
-Al gremio lo encontrás cada día en tu lugar de trabajo, en las marchas, en las asambleas y en cada lucha por las reivindicaciones de los trabajadores docentes de la UBA:  por la paritaria, contra las cesantías de los jubilables, por la estabilidad de los docentes del CBC y de todas las unidades académicas, por el salario para los ad honorem, en apoyo a la lucha de nuestros becarios. También como parte de la lucha por las libertades democráticas y los DDHH. Y por la solidaridad concreta y movilizada en unión con los docentes de los restantes niveles y los trabajadores en general que dan batalla por sus derechos.
- AGD plantea la independencia política de las autoridades y el Estado, defiende la democracia sindical construyendo cada mandato en asamblea de afiliados confronta con las burocracias sindicales, se opone por el vértice a las burocracias que dan la espalda al movimiento docente y entregan nuestras condiciones de trabajo.
-Porque necesitamos fortalecer la AGD como instrumento para avanzar y conquistar nuestras reivindicaciones. Afiliate y afiliá a la AGD.</p> <br>
+		<p class="copete">
+		<strong>Proponé la afiliación a tus compañeros de cátedra, laboratorio o escuela. </strong>
+		AGD es el único sindicato de la UBA que defiende los derechos de las y los docentes preuniversitarios y universitarios. Lucha por un salario igual a la canasta familiar, por estabilidad laboral y mejores condiciones de trabajo y por una Universidad pública, gratuita, científica. 
+		Al gremio lo encontrás cada día en tu lugar de trabajo, en las marchas, en las asambleas y en cada lucha por las reivindicaciones de los trabajadores docentes de la UBA:  por la paritaria, contra las cesantías de los jubilables, por la estabilidad de los docentes del CBC y de todas las unidades académicas, por el salario para los ad honorem, en apoyo a la lucha de nuestros becarios. También como parte de la lucha por las libertades democráticas y los DDHH. Y por la solidaridad concreta y movilizada en unión con los docentes de los restantes niveles y los trabajadores en general que dan batalla por sus derechos.
+		AGD plantea la independencia política de las autoridades y el Estado, defiende la democracia sindical construyendo cada mandato en asamblea de afiliados confronta con las burocracias sindicales, se opone por el vértice a las burocracias que dan la espalda al movimiento docente y entregan nuestras condiciones de trabajo.
+		Porque necesitamos fortalecer la AGD como instrumento para avanzar y conquistar nuestras reivindicaciones. Afiliate y afiliá a la AGD.</p> <br>
+		<h4>Para afiliarse a AGD-UBA es necesario completar el siguiente formulario y nos contactaremos </h4>
+		<br>
 
-<h4>Para afiliarse a AGD-UBA es necesario completar el siguiente formulario y nos contactaremos </h4>
-<br>
-
-				<form action="postulacion.php" method="post"> 
+				<form action="" method="post"> 
 					<div>
 						<div class="col-md-3 afiliacion">
 							<p><label class="afiliacion">Apellido</label> <br>
@@ -90,13 +108,11 @@ Porque necesitamos fortalecer la AGD como instrumento para avanzar y conquistar 
 							</p>
 		
 						</div>
-						
 
-						<div>
-						<p><input class="radio" type="checkbox" name="acepto" required />Acepto la Política de Confidencialidad y Protección de Datos Personales</p>
-						<label class="a1"><input class="a1 enviar" type="submit" name="submit" value="Enviar" /></label>
+						<div class="col-md-12 afiliacion">
+							<p><input class="radio" type="checkbox" name="acepto" required />Acepto la Política de Confidencialidad y Protección de Datos Personales</p>
+							<label class="a1"><input class="a1 enviar" type="submit" name="submit" value="Enviar" /></label>
 						</div>
-
 
 					</div>
 				</form>
