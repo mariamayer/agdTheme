@@ -29,9 +29,8 @@ setlocale(LC_ALL,"es_ES");
 				?>
 		</div>
 		<div class="col-md-3 social">
-			<a href="#"><i class="fa fa-whatsapp"></i></a>
-			<a href="#"><i class="fa fa-facebook"></i></a>
-			<a href="#"><i class="fa fa-twitter"></i></a>
+			<iframe src="https://www.facebook.com/plugins/share_button.php?href=http%3A%2F%2F<?php echo get_permalink( $post->ID ); ?>%2F&layout=icon&mobile_iframe=true&appId=1019463184773352&width=14&height=14" width="14" height="14" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+			<a target="_blank" class="fa fa-twitter" href="https://twitter.com/intent/tweet?text=<?php echo get_permalink( $post->ID ); ?>"></a>
 		</div>
 		<div class="col-md-12">
 			<div class="entry-content">
