@@ -31,16 +31,13 @@
 				</ul>
 			</div>
 			<div class="col-md-2">
-				<ul class="nav-footer">
-					<li><a href="#">Créditos</a></li>				
-				</ul>
 			</div>
 		  	<div class="col-md-2"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-cta.png"></div>
 		  	<div class="col-md-2"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-conaduh.png"></div>
 		  	<div class="col-md-2">
 		  		<ul class="footer-contacto">
        			 <li>Chile 2181 CABA </li>
-       			 <li>TEL 4941 6311/6337</li>
+       			 <li>Tel 4941 6311/6337</li>
         		<li><a href="mailto:adg@sociales.uba.ar" target="_top">adg@sociales.uba.ar</a></li>
       			</ul>
       		</div>

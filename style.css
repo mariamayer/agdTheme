@@ -1350,12 +1350,13 @@ footer .nav-footer{
 	padding: 0;
 	vertical-align: bottom;
 	font-size: 14px;
+	text-transform: uppercase;
+
 
 }
 
 footer .nav-footer li a,footer .col-md-2 a{
 	color:#fff;
-	text-transform: uppercase;
 
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{

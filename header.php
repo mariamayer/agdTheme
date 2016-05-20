@@ -29,8 +29,8 @@
 
 <header id="masthead" class="site-header" role="banner">
 <div class="container">
-	<div class="col-md-4"><a href="<?php echo get_home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-header.png"></a></div>
-  	<div class="col-md-4"><img src="<?php echo get_template_directory_uri(); ?>/img/sub-logo-header.png"></div>
+	<div class="col-md-4" style="margin-top:15px"><a href="<?php echo get_home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-header.png"></a></div>
+  	<div class="col-md-4" style="margin-top:15px" ><img src="<?php echo get_template_directory_uri(); ?>/img/sub-logo-header.png"></div>
   	<div class="col-md-4">
       <ul class="head-contacto">
         <li>Chile 2181 CABA </li>
