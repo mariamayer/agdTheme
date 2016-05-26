@@ -16,7 +16,7 @@ get_header(); ?>
 		<h3>CBC</h3>
 		
 		<div class="panel">
-			<p>SECRETARÍA GENERAL: Gladys Perri  <br>
+			<p>SECRETARIA GENERAL: Gladys Perri  <br>
 				SECRETARÍA GREMIAL Ariel Eidelman <br>
 				SECRETARÍA DE PRENSA: Leandro Rodríguez Lupo <br>
 				SECRETARÍA DE HACIENDA Y ADM.: Paula Gabriela Bandieri <br>
@@ -118,7 +118,7 @@ get_header(); ?>
 			SECRETARÍA DE HACIENDA Y ADM.: Nicolás Tinto  <br> 
 			VOCALÍA TITULAR: Matías Pallás  <br> 
 			VOCALÍA SUPLENTE:   Jimena Durán Prieto  <br> 
-			
+			 <br> 
 			DELEGADOS FADU Arquitectura <br>      
 Mariana Puy  <br>     
 Verónica Pujol  <br>     
@@ -145,7 +145,7 @@ Arturo Balassa <br>
 	</li>
 
 	<li>
-		<h3>FILOSOFÍA Y LETRAS </h3>
+		<h3>FILOSOFIA Y LETRAS </h3>
 		<span>+</span>
 		<div class="panel">
 			<p>SECRETARÍA GENERAL: Eduardo Emilio Glavich  <br> 
@@ -168,7 +168,7 @@ VOCALÍA SUPLENTE: María Julia Carrillo<br>
 
 
 	<li>
-		<h3>INGENIERÍA</h3>
+		<h3>INGENIERIA</h3>
 		<span>+</span>
 		<div class="panel">
 			<p>SECRETARÍA GENERAL: Alejandro Ferrer   <br> 
@@ -213,7 +213,7 @@ Luciano Alturria      <br>
 
 
 	<li>
-		<h3>PSICOLOGÍA </h3>
+		<h3>PSICOLOGIA </h3>
 		<span>+</span>
 		<div class="panel">
 			<p>SECRETARÍA GENERAL: Hernán Scorofitz  <br> 

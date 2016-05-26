@@ -85,11 +85,11 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Servicios <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Asesoria legal y contable</a></li>
-            <li><a href="#">Capacitación docente</a></li>
-            <li><a href="#">Turismo y colonia de vacaciones</a></li>
-            <li><a href="#">Nacimientos/unión civil/casamientos</a></li>
-            <li><a href="#">Descuentos y convenios</a></li>
+            <li><a href="<?php echo get_home_url(); ?>/servicio/asesoria/">Asesoria legal y contable</a></li>
+            <li><a href="<?php echo get_home_url(); ?>/servicio/capacitacion/">Capacitación docente</a></li>
+            <li><a href="<?php echo get_home_url(); ?>/servicio/turismo/">Turismo y colonia de vacaciones</a></li>
+            <li><a href="<?php echo get_home_url(); ?>/servicio/civil/">Nacimientos/unión civil/casamientos</a></li>
+            <li><a href="<?php echo get_home_url(); ?>/servicio/descuentos/">Descuentos y convenios</a></li>
     </ul>
         </li>
         <li class="dropdown">
@@ -97,19 +97,19 @@
           <ul class="dropdown-menu">
             <li><a href="<?php echo get_home_url(); ?>/grilla-salarial/">Simulador salarial</a></li>
             <li><a href="<?php echo get_home_url(); ?>/recibo-de-sueldo/">Recibo de sueldo</a></li>
-            <li><a href="#">Mayores de 65</a></li>
-            <li><a href="#">Asignaciones familiares</a></li>
-            <li><a href="#">Obra social</a></li>
-            <li><a href="#">Convenio colectivo</a></li>
-            <li><a href="#">Caja complementaria</a></li>
-            <li><a href="#">Legislaciones</a></li>
+            <li><a href="<?php echo get_home_url(); ?>/mayores-de-65/">Mayores de 65</a></li>
+            <li><a href="<?php echo get_home_url(); ?>/asignaciones-familiares/">Asignaciones familiares</a></li>
+            <li><a href="<?php echo get_home_url(); ?>/obra-social/">Obra social</a></li>
+            <li><a href="<?php echo get_home_url(); ?>/convenio-colectivo/">Convenio colectivo</a></li>
+            <li><a href="<?php echo get_home_url(); ?>/caja-complementaria/">Caja complementaria</a></li>
+            <li><a href="<?php echo get_home_url(); ?>/legislaciones/">Legislaciones</a></li>
           </ul>
         </li>
-        <li><a href="#">Contacto</a></li>
+        <li><a href="<?php echo get_home_url(); ?>/contacto/">Contacto</a></li>
       </ul>
       <ul class="nav navbar-nav social">
         <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
-        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="https://www.facebook.com/Agd-Uba-788794954571172/"><i class="fa fa-facebook"></i></a></li>
         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
         <li><a href="#"><i class="fa fa-youtube"></i></a></li>
       </ul>

@@ -15,7 +15,7 @@ get_header(); ?>
 			la asamblea de AGD del 17 de noviembre de 2013 actualizó y consagró el presente estatuto para fortalecer una organización que 
 			nació desde las bases, con las comisiones internas de algunas facultades, y hoy es una organización gremial que cuenta con más 
 			de 4500 afiliados.  </p>
-		<span><a class="vinculo" href="http://www.descargar.com"> descargar estatuto </a><span>
+		<span><a class="vinculo" href="http://agduba.org.ar/wp-content/uploads/estatuto_2013.pdf" target="_blank"> descargar estatuto </a><span>
 		</section>
 	</div>	
 </div>
