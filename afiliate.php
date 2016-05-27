@@ -6,7 +6,7 @@ get_header(); ?>
 
 <?php
 if(isset($_POST['submit'])){
-	$to = 'sjgandara@yahoo.com.ar';
+	$to = 'uba.agd@gmail.com';
 	$subject = 'Formulario Afiliacion';
 	$body= '<br>Nombre: '.$_POST['nombre'];
 	$body.= '<br>Apellido: '.$_POST['apellido'];

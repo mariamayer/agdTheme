@@ -7,7 +7,7 @@ get_header(); ?>
 <div class="container body">
 	<div class="col-md-12 bloque">
 		<section class="seccion-area">
-		<span class="subtitulo"> Servicios </span>
+		<span class="subtitulo"> Información general </span>
 		<h1 class="titulo-pag">RECIBO DE SUELDO</h1>
 		<p class="copete">Los recibos de sueldo de los trabajadores de la Universidad de Buenos Aires deben ser retirados en cada unidad  académica . La AGD sigue reclamando para que, como en otras instituciones del Estado, se pueda acceder vía Internet para facilitar su acceso y el inmediato control del cobro. 
 		El pago vía depósito bancario aumenta las dificultades de los docentes para entender la composición de su salario, por lo tanto alentamos a los docentes a revisar con atención su recibo de sueldo como otro modo de defender su salario. Desarrollamos aquí los elementos mas importantes a tener en cuenta:

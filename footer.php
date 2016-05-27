@@ -38,7 +38,7 @@
 		  		<ul class="footer-contacto">
        			 <li>Chile 2181 CABA </li>
        			 <li>Tel 4941 6311/6337</li>
-        		<li><a href="mailto:adg@sociales.uba.ar" target="_top">adg@sociales.uba.ar</a></li>
+        		<li><a href="mailto:uba.agd@gmail.com" target="_top">uba.agd@gmail.com</a></li>
       			</ul>
       		</div>
 		</div>

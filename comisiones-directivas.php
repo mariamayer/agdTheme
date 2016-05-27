@@ -26,11 +26,11 @@ get_header(); ?>
 				DELEGADOS CBC Moreno   <br>   
 				Ycet Chacra      <br>
 				Jorge Mallearel    <br>  
-       
+       <br> 
 				DELEGADOS CBC San Miguel  <br>    
 				Jorge Mallearel      <br>
 				Mariano Indart      <br>
-       
+       <br> 
 				DELEGADOS CBC San Isidro  <br>    
 				Nicolás Ciancaglini      <br>
 				Luciano Domínguez Pose   <br>  
@@ -155,13 +155,20 @@ Arturo Balassa <br>
 			VOCALÍA TITULAR: Violeta Anahí Killian Galván  <br> 
 			VOCALÍA SUPLENTE: Adrián Marcelo Piva  <br> 
 <br>
-INSTITUTO LIBRE DE SEGUNDA ENSEÑANZA <br>
-SECRETARÍA GENERAL: Gustavo O. Dalmazzo<br>
-SECRETARÍA GREMIAL: Claudio A. Cugliari<br>
-SECRETARÍA DE PRENSA: Guillermo J. Gasbarro <br>
-SECRETARÍA DE HACIENDA Y ADM.: María José Risolía <br>
-VOCALÍA TITULAR: Eduardo E. Cirigliano<br>
-VOCALÍA SUPLENTE: María Julia Carrillo<br>
+
+			</p>
+		</div>
+	</li>
+	<li>
+		<h3>ILSE </h3>
+		<span>+</span>
+		<div class="panel">
+			<p>SECRETARÍA GENERAL: Gustavo Omar Dalmazzo  <br> 
+			SECRETARÍA GREMIAL: Claudio Alejandro Cugliari <br> 
+			SECRETARÍA DE PRENSA: Guillermo Javier Gasbarro  <br> 
+			SECRETARÍA DE HACIENDA, FINANZAS Y ACTAS: Maria Jose Risolia <br> 
+			VOCALÍA TITULAR: Eduardo Esteban Cirigliano <br> 
+			VOCALÍA SUPLENTE: Maria Julia Carrillo <br> 
 			</p>
 		</div>
 	</li>
@@ -199,14 +206,14 @@ Juan Martín Calvetti      <br>
        <br> 
 DELEGADOS Dto. De Farmacología      <br> 
 Luciana D´Alessio      <br> 
-       
+       <br> 
 DELEGADOS Dto. De Bioquímica Humana      <br> 
 Laura Alvarez      <br> 
-       
+       <br> 
 DELEGADOS Dto. De Histología, Embriología, Biología Celular y Genética      <br> 
 Laura Kaplan      <br> 
 Luciano Alturria      <br> 
-
+<br> 
 			</p>
 		</div>
 	</li>

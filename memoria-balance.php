@@ -11,7 +11,7 @@ get_header(); ?>
 		<h1 class="titulo-pag">MEMORIA Y BALANCES</h1>
 		<p class="cuerpo">Ponemos a disposición de nuestros afiliados y afiliadas la memoria y los balances que fueran oportunamente 
 			expuestos, aprobados por la Mesa Ejecutiva y la Comisión Revisora de Cuentas y votados por las asambleas respectivas.</p>
-		<span><a class="vinculo" href="http://www.descargar.com"> MEMORIA DE AGD JULIO 2014 A JULIO 2015 </a><span>
+		<span><a class="vinculo" href="http://agduba.org.ar/wp-content/uploads/memoria_2014_-_2015_1.pdf" target="_blank"> MEMORIA DE AGD JULIO 2014 A JULIO 2015 </a><span>
 		<p class="vinculo">26/10/2016</p>
 		</section>
 	</div>	

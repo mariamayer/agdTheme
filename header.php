@@ -35,7 +35,7 @@
       <ul class="head-contacto">
         <li>Chile 2181 CABA </li>
         <li>TEL 4941 6311/6337</li>
-        <li><a href="mailto:adg@sociales.uba.ar" target="_top">adg@sociales.uba.ar</a></li>
+        <li><a href="mailto:uba.agd@gmail.com" target="_top">uba.agd@gmail.com</a></li>
       </ul>
         </div>
 </div>
@@ -79,6 +79,7 @@
             <li><a href="<?php echo get_home_url(); ?>/category/libertad-sindical/">Libertad sindical</a></li>            
             <li><a href="<?php echo get_home_url(); ?>/category/obra-social/">Obra social</a></li>
             <li><a href="<?php echo get_home_url(); ?>/category/presupuesto-universitario/">Presupuesto Universitario</a></li>
+            <li><a href="<?php echo get_home_url(); ?>/category/paritarias/">Negociación salarial y paritarias</a></li>
 
           </ul>
         </li>
@@ -88,7 +89,7 @@
             <li><a href="<?php echo get_home_url(); ?>/servicio/asesoria/">Asesoria legal y contable</a></li>
             <li><a href="<?php echo get_home_url(); ?>/servicio/capacitacion/">Capacitación docente</a></li>
             <li><a href="<?php echo get_home_url(); ?>/servicio/turismo/">Turismo y colonia de vacaciones</a></li>
-            <li><a href="<?php echo get_home_url(); ?>/servicio/civil/">Nacimientos/unión civil/casamientos</a></li>
+            <li><a href="<?php echo get_home_url(); ?>/servicio/civil/">Kit escolar / Nacimientos</a></li>
             <li><a href="<?php echo get_home_url(); ?>/servicio/descuentos/">Descuentos y convenios</a></li>
     </ul>
         </li>
@@ -110,8 +111,8 @@
       <ul class="nav navbar-nav social">
         <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
         <li><a href="https://www.facebook.com/Agd-Uba-788794954571172/"><i class="fa fa-facebook"></i></a></li>
-        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+        <li><a href="https://twitter.com/UbaAgd"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="https://www.youtube.com/channel/UCOh-digS9dxxBrZK2Ok7bmQ"><i class="fa fa-youtube"></i></a></li>
       </ul>
       <form class="navbar-form navbar-left" role="search">
         <div class="form-group">
