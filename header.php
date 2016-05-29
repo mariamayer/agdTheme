@@ -114,9 +114,10 @@
         <li><a href="https://twitter.com/UbaAgd"><i class="fa fa-twitter"></i></a></li>
         <li><a href="https://www.youtube.com/channel/UCOh-digS9dxxBrZK2Ok7bmQ"><i class="fa fa-youtube"></i></a></li>
       </ul>
-      <form class="navbar-form navbar-left" role="search">
+      <form class="navbar-form navbar-left" role="search" method="get" id="searchform"
+    class="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
         <div class="form-group">
-          <input type="text" class="form-control" placeholder="buscar">
+          <input type="text" value="<?php echo get_search_query(); ?>" name="s"  class="form-control" placeholder="buscar">
         </div>
         <button type="submit" class="btn btn-default btn-agd"><i class="fa fa-search"></i></span></button>
       </form>

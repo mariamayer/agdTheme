@@ -29,8 +29,13 @@ setlocale(LC_ALL,"es_ES");
 				?>
 		</div>
 		<div class="col-md-3 social">
-			<iframe src="https://www.facebook.com/plugins/share_button.php?href=http%3A%2F%2F<?php echo get_permalink( $post->ID ); ?>%2F&layout=icon&mobile_iframe=true&appId=1019463184773352&width=14&height=14" width="14" height="14" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+		Compartir
+			<a target="_blank" class="fa fa-facebook" href="https://www.facebook.com/sharer/sharer.php?u=<?php echo get_permalink( $post->ID ); ?>"></a>
 			<a target="_blank" class="fa fa-twitter" href="https://twitter.com/intent/tweet?text=<?php echo get_permalink( $post->ID ); ?>"></a>
+			<a href="mailto:?subject=Quiero compartirte la siguiente noticia <?php echo get_permalink( $post->ID ); ?>"
+			   title="Share by Email">
+			  <i class="fa fa-envelope" aria-hidden="true"></i>
+			</a>
 		</div>
 		<div class="col-md-12">
 			<div class="entry-content">

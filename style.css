@@ -1340,7 +1340,7 @@ object {
 	padding: 0px;
 }
 
-footer{
+footer,#colophon{
 	background-color: #000;
 }
 footer .nav-footer{
@@ -1453,6 +1453,11 @@ footer .nav-footer li a,footer .col-md-2 a{
 }
 .categoria #grilla .bloque .img{
 	padding:0;
+	height:200px;
+	overflow: hidden;
+}
+.categoria #grilla .bloque .img img{
+	width:100%;
 }
 .categoria #grilla .bloque .titulo{
 	background-color: #585858;
