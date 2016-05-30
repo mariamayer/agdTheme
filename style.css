@@ -1434,6 +1434,10 @@ footer .nav-footer li a,footer .col-md-2 a{
 .noticia-single .entry-header p{
 	font-family: 'Roboto Condensed', sans-serif;
 }
+
+.entry-meta { display: none; }
+
+
 /*** CATEGORIA ***/
 .categoria #cat{
 	background-color: #fff;
