@@ -85,8 +85,14 @@ get_header(); ?>
 
 	<div class="col-md-4 bloque">
 		<div class="col-md-12 bloque noticia link" style="padding:0px">
-			<h3 class="cat-video"> Encuestas y petitorios </h3>
-			<a href="<?php echo get_home_url();?>/grilla-salarial/" class="titulo-video">Grilla salarial</a>
+			<?php $petitorios = new WP_Query(  array( 'category_name' => 'petitorios','posts_per_page'=> 3 ) );
+			if ($petitorios->have_posts()) :
+			// The Loop
+			while ( $petitorios->have_posts() ) : $petitorios->the_post();
+			echo '<h3 class="cat-video"> Encuestas y petitorios </h3>';
+			echo '<a href="'.get_the_permalink().'" class="titulo-video">'. get_the_title() .'</a>';
+			endwhile;
+			endif; ?>
 		</div>
 		<div class="col-md-12 bloque noticia" style="padding:0px">
 			<h3 class="cat-video"> Resúmenes </h3>
