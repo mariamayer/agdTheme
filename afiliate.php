@@ -54,7 +54,7 @@ if(isset($_POST['submit'])){
 					
 						<div class="col-md-3 afiliacion">
 							<p><label class="afiliacion">Teléfono</label> <br>
-							<input class="a1" type="text" name="telefono"  />
+							<input class="a1" type="text" name="telefono" required />
 							</p>
 						</div>
 						

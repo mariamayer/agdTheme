@@ -9,7 +9,7 @@ get_header(); ?>
 		<section class="seccion-area">
 		<span class="subtitulo"> Información general</span>
 		<h1 class="titulo-pag">Mayores de 65</h1>
-		<p class="copete">En construcción</p>
+		<a class="vinculo" href="http://www.anses.gob.ar/prestacion/regimen-especial-para-docentes-e-investigadores-176" target="_blank"> Régimen especial para docentes e investigadores de la ANSES </a>
 		</section>
 	</div>	
 </div>

@@ -29,10 +29,14 @@ get_header(); ?>
 							}
 							?>
 					</div>
-					<div class="col-md-3 social">
-						<a href="#"><i class="fa fa-whatsapp"></i></a>
-						<a href="#"><i class="fa fa-facebook"></i></a>
-						<a href="#"><i class="fa fa-twitter"></i></a>
+					<div class="col-md-3 social compartir">
+						Compartir
+						<a target="_blank" class="fa fa-facebook" href="https://www.facebook.com/sharer/sharer.php?u=<?php echo get_permalink( $post->ID ); ?>"></a>
+						<a target="_blank" class="fa fa-twitter" href="https://twitter.com/intent/tweet?text=<?php echo get_permalink( $post->ID ); ?>"></a>
+						<a href="mailto:?subject=Quiero compartirte la siguiente noticia <?php echo get_permalink( $post->ID ); ?>"
+			  			 title="Compartir por mail">
+			  			<i class="fa fa-envelope" aria-hidden="true"></i>
+						</a>
 					</div>
 					<div class="col-md-12">
 						<div class="entry-content">

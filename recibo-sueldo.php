@@ -9,8 +9,7 @@ get_header(); ?>
 		<section class="seccion-area">
 		<span class="subtitulo"> Información general </span>
 		<h1 class="titulo-pag">RECIBO DE SUELDO</h1>
-		<p class="copete">Los recibos de sueldo de los trabajadores de la Universidad de Buenos Aires deben ser retirados en cada unidad  académica . La AGD sigue reclamando para que, como en otras instituciones del Estado, se pueda acceder vía Internet para facilitar su acceso y el inmediato control del cobro. 
-		El pago vía depósito bancario aumenta las dificultades de los docentes para entender la composición de su salario, por lo tanto alentamos a los docentes a revisar con atención su recibo de sueldo como otro modo de defender su salario. Desarrollamos aquí los elementos mas importantes a tener en cuenta:
+		<p class="copete">Los recibos de sueldo de los trabajadores de la Universidad de Buenos Aires deben ser retirados en cada unidad académica. La AGD sigue reclamando para que, como en otras instituciones del Estado o la propia Facultad de Cs. Económicas/UBA, se pueda acceder vía Internet para facilitar su acceso y el inmediato control del cobro. El pago vía depósito bancario aumenta las dificultades de los docentes para entender la composición de su salario, por lo tanto alentamos a los docentes a revisar con atención su recibo de sueldo como otro modo de defender su salario. Desarrollamos aquí los elementos mas importantes a tener en cuenta:
 		</p>
 
 		<hr>
@@ -59,11 +58,11 @@ AGD rechaza las sumas en negro y no remunerativas, y ha conquistado con la lucha
 			<span>+</span>
 			<div class="panel">
 			<p>-aporte jubilatorio (201): en la legislación argentina la jubilación es un salario diferido, y corresponde al aporte del 13% del sueldo bruto sin tener en cuenta las sumas “grises”. AGD rechaza la norma menemista que sigue vigente que exime del aporte a las patronales, y al mismo tiempo advierte sobre el fraude de las sumas “grises” que no serán computadas en la liquidación del haber jubilatorio sobre el 82% del salario.<br>
--Obra social (210/11/13/14): el aporte debería ser el 3% del sueldo bruto (sin grises), pero se habilita a una serie de descuentos (211/13/14) que se imponen como un gravamen fraudulento sobre los ingresos docentes.<br>
+-Obra social (210/11/13/14):  el aporte debería ser el 3% del sueldo bruto (sin grises), pero se habilita a una serie de descuentos (211/13/14) que se imponen como un gravamen fraudulento sobre los ingresos docentes.<br>
 
 -caja complementaria docente (272): aporte del 4.5% de carácter opcional pero impuesto compulsivamente por la UBA. AGD rechaza su aplicación compulsiva y rechaza el concepto de caja jubilatoria complementaria porque es el resultado de un Convenio firmado entre interventores de la dictadura, porque se trata de una caja negra que controlan tres representantes del Ministerio de Educación y cuatro sindicatos (Ctera, Sadop, Amet y Uda) que no rinden cuenta de lo recaudado ni de su distribución y, finalmente, porque habiendo conquistado la ley jubilatoria para los docentes universitarios que nos permite acceder al 82% no se justifica compensación alguna. Se debe tramitar en las correspondientes direcciones de sueldos su desafiliación para sentar precedente. Hasta el momento no pudimos quebrar el carácter compulsivo de este saqueo al salario dado que la Caja cuenta con un dictamen favorable de la Corte Suprema.<br>
 
--aporte jubilatorio ley 23.568 (247): aporte del 2% que garantiza el régimen especial de jubilación para los docentes universitarios (Ley 23.568) conquistado con la lucha docente y que garantiza a los docentes al llegar a los 65 años el derecho a seguir trabajando o jubilarse (link a subsección mayores de 65 años).<br>
+-aporte jubilatorio ley 23.568 (247): descuento compulsivo del 3% para recomponer la caja del PAMI quebrado.<br>
 
 -aporte sindical (AGD UBA 282): aporte regulado por los sindicatos, AGD descuenta el 1% del bruto. La afiliación a nuestro sindicato es voluntaria y se concreta a partir del completamiento de la ficha de afiliación respectiva.<br>
 Si en este rubro figura otro código (ADUBA 270, FEDUBA 273) y jamás prestaste tu voluntad, fuiste afiliado compulsivamente, lo cual es ilegal. La afiliación al sindicato es voluntaria. Te llamamos a afiliar a la AGD y a desafiliarte de los otros sindicatos.

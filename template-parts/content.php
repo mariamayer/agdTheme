@@ -28,7 +28,7 @@ setlocale(LC_ALL,"es_ES");
 				}
 				?>
 		</div>
-		<div class="col-md-3 social">
+		<div class="col-md-3 social compartir">
 		Compartir
 			<a target="_blank" class="fa fa-facebook" href="https://www.facebook.com/sharer/sharer.php?u=<?php echo get_permalink( $post->ID ); ?>"></a>
 			<a target="_blank" class="fa fa-twitter" href="https://twitter.com/intent/tweet?text=<?php echo get_permalink( $post->ID ); ?>"></a>
