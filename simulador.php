@@ -13,7 +13,7 @@ get_header(); ?>
 		<a class="vinculo" href="http://agduba.org.ar/wp-content/uploads/grilla_salarial_docente_noviembre_2015.pdf" target="_blank"> Grilla Salarial 2015 </a><span>
 
 
-				<form action="grilla.php" method="post"> 
+				<form action="<?php echo get_home_url(); ?>/grilla/" method="post"> 
 					<div >
 						
 
@@ -44,16 +44,16 @@ get_header(); ?>
 						<div class="col-md-6">
 							<p> Antigüedad
 								 <select name="antiguedad" class="antiguedad">
-   									<option value="0-5">0 a 5</option>
-   									<option value="5-7">5 a 7</option>
-   									<option value="7-10">7 a 10</option>
-   									<option value="10-12">10 a 12</option>
-   									<option value="12-15">12 a 15</option>
-   									<option value="15-17">15 a 17</option>
-   									<option value="17-20">17 a 20</option>
-   									<option value="20-22">20 a 22</option>
-   									<option value="22-24">22 a 24</option>
-   									<option value="m24">Mayor a 24</option>
+   									<option value="0">0 a 5</option>
+   									<option value="0.3">5 a 7</option>
+   									<option value="0.4">7 a 10</option>
+   									<option value="0.5">10 a 12</option>
+   									<option value="0.6">12 a 15</option>
+   									<option value="0.7">15 a 17</option>
+   									<option value="0.8">17 a 20</option>
+   									<option value="0.10">20 a 22</option>
+   									<option value="0.11">22 a 24</option>
+   									<option value="0.12">Mayor a 24</option>
   								</select>
 							</p>
 						</div>
@@ -72,8 +72,8 @@ get_header(); ?>
 						<div class="col-md-12">
 						<p> ¿Está afiliado a AGD?
 								 <select name="afiliacion" class="especializacion">
-   									<option value="no">Si</option>
-   									<option value="especializacion">No</option>
+   									<option value="si">Si</option>
+   									<option value="no">No</option>
   								</select>
 							</p>
 						</div>
