@@ -103,7 +103,7 @@ get_header(); ?>
 		if($_POST['afiliacion']=='si'){
 			$agd=0.01;
 		}else{
-			$agd=1;
+			$agd=0;
 		}
 		$afiliado=$basico*$agd;
 
@@ -114,22 +114,22 @@ get_header(); ?>
 
 		$resultado=$inicial+$suma-$resta;
 
-		echo '<p>Sueldo Neto: $ '.$resultado.'</p>';
+		echo '<p>Sueldo Neto: $ '.number_format((float)$resultado, 2, '.', '').'</p>';
 
 		echo '<p>Pruebas</p>';
-		echo '<p>Sueldo Inicial (120): $ '.$inicial.'</p>';
+		echo '<p>Sueldo Inicial (120): $ '.number_format((float)$inicial, 2, '.', '').'</p>';
 		echo '<p>Sumas</p>';
-		echo '<p>Antiguedad (103): $ '.$antiguedad.'</p>';
-		echo '<p>Codigo (174t): $ '.$codigo.'</p>';
-		echo '<p>Plus por titulo (110): $ '.$titulo.'</p>';
+		echo '<p>Antiguedad (103): $ '.number_format((float)$antiguedad, 2, '.', '').'</p>';
+		echo '<p>Codigo (174t): $ '.number_format((float)$codigo, 2, '.', '').'</p>';
+		echo '<p>Plus por titulo (110): $ '.number_format((float)$titulo, 2, '.', '').'</p>';
 		echo '<p>Restas</p>';
-		echo '<p>Jubilacion (201): $ '.$jubilacion.'</p>';
-		echo '<p>Pami (247): $ '.$pami.'</p>';
-		echo '<p>Obra Social (210): $ '.$obrasocial.'</p>';
-		echo '<p>Garantia (207t): $ '.$garantia.'</p>';
-		echo '<p>Prestacones (214): $ '.$prestaciones.'</p>';
-		echo '<p>Seguro de Vida (234): $ '.$seguro.'</p>';
-		echo '<p>Afiliacion (282): $ '.$afiliado.'</p>';
+		echo '<p>Jubilacion (201): $ '.number_format((float)$jubilacion, 2, '.', '').'</p>';
+		echo '<p>Pami (247): $ '.number_format((float)$pami, 2, '.', '').'</p>';
+		echo '<p>Obra Social (210): $ '.number_format((float)$obrasocial, 2, '.', '').'</p>';
+		echo '<p>Garantia (207t): $ '.number_format((float)$garantia, 2, '.', '').'</p>';
+		echo '<p>Prestacones (214): $ '.number_format((float)$prestaciones, 2, '.', '').'</p>';
+		echo '<p>Seguro de Vida (234): $ '.number_format((float)$seguro, 2, '.', '').'</p>';
+		echo '<p>Afiliacion (282): $ '.number_format((float)$afiliado, 2, '.', '').'</p>';
 
 
 		?>

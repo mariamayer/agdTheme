@@ -51,9 +51,9 @@ get_header(); ?>
    									<option value="0.6">12 a 15</option>
    									<option value="0.7">15 a 17</option>
    									<option value="0.8">17 a 20</option>
-   									<option value="0.10">20 a 22</option>
-   									<option value="0.11">22 a 24</option>
-   									<option value="0.12">Mayor a 24</option>
+   									<option value="1">20 a 22</option>
+   									<option value="11">22 a 24</option>
+   									<option value="12">Mayor a 24</option>
   								</select>
 							</p>
 						</div>
