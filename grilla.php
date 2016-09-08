@@ -9,12 +9,14 @@ get_header(); ?>
 		<section class="seccion-area">
 		<span class="subtitulo"> Calculador automático </span>
 		<h1 class="titulo-pag">Grilla Salarial</h1>
+		
+
 		<?php
-		echo '<p>Categoria: '.$_POST['categoria'].'</p>';
-		echo '<p>Dedicación: '.$_POST['dedicacion'].'</p>';
-		echo '<p>Antiguedad: '.$_POST['antiguedad'].'</p>';
-		echo '<p>Cobra Plus: '.$_POST['especializacion'].'</p>';
-		echo '<p>Afiliado a AGD?: '.$_POST['afiliacion'].'</p>';
+		echo '<h2>Categoria: '.$_POST['categoria'].'</h2>';
+		echo '<h2>Dedicación: '.$_POST['dedicacion'].'</h2>';
+		echo '<h2>Antigüedad: '.$_POST['antiguedad'].'</h2>';
+		echo '<h2>Titulo: '.$_POST['especializacion'].'</h2>';
+		echo '<h2>Afiliado a AGD?: '.$_POST['afiliacion'].'</h2>';
 		$dedicacion= $_POST['dedicacion'];
 		$especializacion=$_POST['especializacion'];
 		if($especializacion=='no'){
@@ -99,7 +101,8 @@ get_header(); ?>
 		$obrasocial=$basico*0.03;
 		$garantia=120;
 		$prestaciones=50;
-		$seguro=3.80;
+		$complementaria=$basico*0.045;
+		$seguro=11.40;
 		if($_POST['afiliacion']=='si'){
 			$agd=0.01;
 		}else{
@@ -110,30 +113,46 @@ get_header(); ?>
 		//RESULTADO SUMA
 		$suma=$codigo+$titulo+$antiguedad;
 		//RESULTADO RESTA
-		$resta=$jubilacion+$pami+$obrasocial+$garantia+$prestaciones+$seguro+$afiliado;
+		$resta=$jubilacion+$pami+$obrasocial+$garantia+$prestaciones+$seguro+$complementaria+$afiliado;
 
 		$resultado=$inicial+$suma-$resta;
 
-		echo '<p>Sueldo Neto: $ '.number_format((float)$resultado, 2, '.', '').'</p>';
+		echo '<p><hr></p>';
 
-		echo '<p>Pruebas</p>';
-		echo '<p>Sueldo Inicial (120): $ '.number_format((float)$inicial, 2, '.', '').'</p>';
-		echo '<p>Sumas</p>';
-		echo '<p>Antiguedad (103): $ '.number_format((float)$antiguedad, 2, '.', '').'</p>';
-		echo '<p>Codigo (174t): $ '.number_format((float)$codigo, 2, '.', '').'</p>';
-		echo '<p>Plus por titulo (110): $ '.number_format((float)$titulo, 2, '.', '').'</p>';
-		echo '<p>Restas</p>';
+		echo '<h2 style="color:#e31f26">Estimación Sueldo Neto: $ '.number_format((float)$resultado, 2, '.', '').'</h2>';
+
+
+		echo '<p><hr></p>';
+		echo '<h2>HABERES</h2>';
+		echo '<p>Sueldo básico (101): $ '.number_format((float)$inicial, 2, '.', '').'</p>';
+		echo '<p>Antigüedad (103): $ '.number_format((float)$antiguedad, 2, '.', '').'</p>';
+		echo '<p>Adicional no remunerativo (174t): $ '.number_format((float)$codigo, 2, '.', '').'</p>';
+		echo '<p>Adicional por titulo (110): $ '.number_format((float)$titulo, 2, '.', '').'</p>';
+
+		echo '<h2>Descuentos</h2>';
+
 		echo '<p>Jubilacion (201): $ '.number_format((float)$jubilacion, 2, '.', '').'</p>';
-		echo '<p>Pami (247): $ '.number_format((float)$pami, 2, '.', '').'</p>';
-		echo '<p>Obra Social (210): $ '.number_format((float)$obrasocial, 2, '.', '').'</p>';
-		echo '<p>Garantia (207t): $ '.number_format((float)$garantia, 2, '.', '').'</p>';
-		echo '<p>Prestacones (214): $ '.number_format((float)$prestaciones, 2, '.', '').'</p>';
+
+		echo '<p>Descuento Pami (247): $ '.number_format((float)$pami, 2, '.', '').'</p>';
+
+		echo '<p>Aporte Obra Social DOSUBA (210): $ '.number_format((float)$obrasocial, 2, '.', '').'</p>';
+
+		echo '<p>DOSUBA (Garantía aporte mínimo) (207t): $ '.number_format((float)$garantia, 2, '.', '').'</p>';
+
+		echo '<p>DOSUBA (Prestaciones) (214): $ '.number_format((float)$prestaciones, 2, '.', '').'</p>';
+
 		echo '<p>Seguro de Vida (234): $ '.number_format((float)$seguro, 2, '.', '').'</p>';
-		echo '<p>Afiliacion (282): $ '.number_format((float)$afiliado, 2, '.', '').'</p>';
 
+		echo '<p>Caja complementaria (272): $ '.number_format((float)$complementaria, 2, '.', '').'</p>';
 
+		echo '<p>Aporte sindical AGD UBA (282): $ '.number_format((float)$afiliado, 2, '.', '').'</p>';
+	
+		echo '<p><hr></p>';
 		?>
 
+
+		<a class="vinculo" style="color:#e31f26" href="http://agduba.org.ar/grilla-salarial"> Volver </a>
+		
 		</section>
 	</div>
 

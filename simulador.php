@@ -52,8 +52,8 @@ get_header(); ?>
    									<option value="0.7">15 a 17</option>
    									<option value="0.8">17 a 20</option>
    									<option value="1">20 a 22</option>
-   									<option value="11">22 a 24</option>
-   									<option value="12">Mayor a 24</option>
+   									<option value="1.1">22 a 24</option>
+   									<option value="1.2">Mayor a 24</option>
   								</select>
 							</p>
 						</div>
@@ -82,33 +82,6 @@ get_header(); ?>
 						<p><input class="radio" type="checkbox" name="acepto" required />Acepto la Política de Confidencialidad y Protección de Datos Personales</p>
 						<label class="a1"><input class="a1 enviar" type="submit" name="submit" value="Consultar" /></label> <br>
 						<hr>
-
-						<h2 style="color:#e31f26"> Total sueldo bruto </h2>
-						<p> $ 11.474,24 </p>
-
-						<h2> Codigo remunerativo </h2>
-						<p> 101 | $ 9.561,80 </p>
-						<p> 103 | $ 1245,00 </p>
-						<p> 120 | $ 1245,00 </p>
-						<p> 174t | $ 245,00 </p>
-						<p> 110 | $ 3.251,66 </p>
-
-
-						<h2 > Total de haberes </h2>
-						<p> 174 | $ 245,00 </p>
-
-						<p> 201 | $ 9.561,80 </p>
-						<p> 247 | $ 1245,00 </p>
-						<p> 210 | $ 1245,00 </p>
-						<p> 207t | $ 245,00 </p>
-						<p> 214 | $ 3.251,66 </p>
-						<p> 234 | $ 3.251,66 </p>
-						<p> 282 | $ 3.251,66 </p>
-
-						<h2> Sueldo Neto*</h2>
-						<p> 110 | $ 3.251,66 </p>
-						<hr>
-						<p> Aclaraciones (*): Se considera un título doctorado con 17% sobre el básico, si fuese Maestría corresponde 7% del básico, Especialización 5% del básico
 
 
 					</div>

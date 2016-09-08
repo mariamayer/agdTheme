@@ -109,7 +109,8 @@ if(isset($_POST['submit'])){
    									<option value="ilse">ILSE</option>
    									<option value="derecho">Derecho</option>
    									<option value="economicas">Económicas</option>
-   									<option value="exactar">Exactas y Naturales</option>
+   									<option value="exactas">Exactas y Naturales</option>
+   									<option value="filosofia">Filosofía y Letras y</option>
    									<option value="ingenieria">Ingeniería</option>
    									<option value="medicina">Medicina</option>
    									<option value="sociales">Sociales</option>
