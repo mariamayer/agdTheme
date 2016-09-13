@@ -35,57 +35,73 @@ get_header(); ?>
 				if($_POST['categoria']=='titular'){
 					$inicial=5641.43;
 					$codigo=35;
+					$garantia=956.17;
 				}elseif($_POST['categoria']=='asociado'){
 					$inicial=5048.68;
 					$codigo=33;
+					$garantia=855.71;
 				}elseif($_POST['categoria']=='adjunto'){
 					$inicial=4455.92;
 					$codigo=29;
+					$garantia=755.24;
 				}elseif($_POST['categoria']=='jtp'){
 					$inicial=3863.15;
 					$codigo=26;
+					$garantia=654.77;
 				}elseif($_POST['categoria']=='ay1'){
 					$inicial=3270.39;
 					$codigo=22;
+					$garantia=554.30;
 				}elseif($_POST['categoria']=='ay2'){
 					$inicial=2616.32;
 					$codigo=20;
+					$garantia=443.44;
 				}
 				break;
 			case 'semiexclusiva':
 				if($_POST['categoria']=='titular'){
 					$inicial=9561.87;
 					$codigo=107;
+					$garantia=1912.37;
 				}elseif($_POST['categoria']=='asociado'){
 					$inicial=8557.18;
 					$codigo=101;
+					$garantia=1711.44;
 				}elseif($_POST['categoria']=='adjunto'){
 					$inicial=7552.49;
 					$codigo=88;
+					$garantia=1510.50;
 				}elseif($_POST['categoria']=='jtp'){
 					$inicial=6547.80;
 					$codigo=77;
+					$garantia=1309.56;
 				}elseif($_POST['categoria']=='ay1'){
 					$inicial=5543.11;
 					$codigo=70;
+					$garantia=1108.62;
 				}
 				break;
 			case 'exclusiva':
 				if($_POST['categoria']=='titular'){
 					$inicial=19123.71;
 					$codigo=245;
+					$garantia=3824.74;
 				}elseif($_POST['categoria']=='asociado'){
 					$inicial=17114.33;
 					$codigo=230;
+					$garantia=3422.87;
 				}elseif($_POST['categoria']=='adjunto'){
 					$inicial=15104.96;
 					$codigo=200;
+					$garantia=3020.99;
 				}elseif($_POST['categoria']=='jtp'){
 					$inicial=13095.58;
 					$codigo=175;
+					$garantia=2619.12;
 				}elseif($_POST['categoria']=='ay1'){
 					$inicial=11086.21;
 					$codigo=158;
+					$garantia=2217.24;
 				}
 				break;
 		}
@@ -112,10 +128,16 @@ get_header(); ?>
 
 		//RESULTADO SUMA
 		$suma=$codigo+$titulo+$antiguedad;
+
 		//RESULTADO RESTA
 		$resta=$jubilacion+$pami+$obrasocial+$garantia+$prestaciones+$seguro+$complementaria+$afiliado;
 
-		$resultado=$inicial+$suma-$resta;
+	
+		if($_POST['antiguedad']=='0'){
+			$resultado=$inicial+$suma-$resta+$garantia;
+		}else{
+			$resultado=$inicial+$suma-$resta;
+		}
 
 		echo '<p><hr></p>';
 
