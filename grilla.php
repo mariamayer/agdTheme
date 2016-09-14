@@ -9,6 +9,10 @@ get_header(); ?>
 		<section class="seccion-area">
 		<span class="subtitulo"> Calculador automático </span>
 		<h1 class="titulo-pag">Grilla Salarial</h1>
+		<p class="cuerpo">Elaboramos el presente simulador con el objetivo de brindar a los compañera/os una herramienta amigable que oriente el monto que debemos percibir como salario. 
+Debe tenerse en cuenta que algunos items que no han sido contemplados, como la imposición del impuesto a las ganancias, asignaciones familiares, etc.<br>
+		<a class="vinculo" href="http://agduba.org.ar/wp-content/uploads/grilla_salarial_docente_noviembre_2015.pdf" target="_blank"> Aqui </a> puede consultarse la grilla salarial vigente a la fecha para verificar cada uno de los items en detalle.<br>
+		<a class="vinculo" href="http://agduba.org.ar/recibo-de-sueldo/" target="_blank"> Aqui </a> puede encontrar una guía sobre como leer el recibo de sueldo.<br> <br></p>
 		
 
 		<?php
@@ -115,7 +119,6 @@ get_header(); ?>
 		$jubilacion=$basico*0.13;
 		$pami=$basico*0.03;
 		$obrasocial=$basico*0.03;
-		$garantia=120;
 		$prestaciones=50;
 		$complementaria=$basico*0.045;
 		$seguro=11.40;
@@ -130,7 +133,7 @@ get_header(); ?>
 		$suma=$codigo+$titulo+$antiguedad;
 
 		//RESULTADO RESTA
-		$resta=$jubilacion+$pami+$obrasocial+$garantia+$prestaciones+$seguro+$complementaria+$afiliado;
+		$resta=$jubilacion+$pami+$obrasocial+$prestaciones+$seguro+$complementaria+$afiliado;
 
 	
 		if($_POST['antiguedad']=='0'){
@@ -150,6 +153,7 @@ get_header(); ?>
 		echo '<p>Antigüedad (103): $ '.number_format((float)$antiguedad, 2, '.', '').'</p>';
 		echo '<p>Adicional no remunerativo (174t): $ '.number_format((float)$codigo, 2, '.', '').'</p>';
 		echo '<p>Adicional por titulo (110): $ '.number_format((float)$titulo, 2, '.', '').'</p>';
+		echo '<p>Garantía Salarial(120): $ '.number_format((float)$garantia, 2, '.', '').'</p>';
 
 		echo '<h2>Descuentos</h2>';
 
