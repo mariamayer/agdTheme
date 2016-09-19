@@ -212,3 +212,4 @@ function create_new_taxonomies() {
 	register_taxonomy( 'servicio', array( 'beneficios' ), $args );
 }
 
+require_once ( get_template_directory() . '/theme-options.php' );

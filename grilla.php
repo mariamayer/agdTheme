@@ -11,11 +11,12 @@ get_header(); ?>
 		<h1 class="titulo-pag">Grilla Salarial</h1>
 		<p class="cuerpo">Elaboramos el presente simulador con el objetivo de brindar a los compañera/os una herramienta amigable que oriente el monto que debemos percibir como salario. 
 Debe tenerse en cuenta que algunos items que no han sido contemplados, como la imposición del impuesto a las ganancias, asignaciones familiares, etc.<br>
-		<a class="vinculo" href="http://agduba.org.ar/wp-content/uploads/grilla_salarial_docente_noviembre_2015.pdf" target="_blank"> Aqui </a> puede consultarse la grilla salarial vigente a la fecha para verificar cada uno de los items en detalle.<br>
+		<a class="vinculo" href="<?php echo esc_attr( get_option('pdf') ); ?>" target="_blank"> Aqui </a> puede consultarse la grilla salarial vigente a la fecha para verificar cada uno de los items en detalle.<br>
 		<a class="vinculo" href="http://agduba.org.ar/recibo-de-sueldo/" target="_blank"> Aqui </a> puede encontrar una guía sobre como leer el recibo de sueldo.<br> <br></p>
 		
 
 		<?php
+
 		echo '<h2>Categoria: '.$_POST['categoria'].'</h2>';
 		echo '<h2>Dedicación: '.$_POST['dedicacion'].'</h2>';
 		echo '<h2>Antigüedad: '.$_POST['antiguedad'].'</h2>';
@@ -26,85 +27,85 @@ Debe tenerse en cuenta que algunos items que no han sido contemplados, como la i
 		if($especializacion=='no'){
 			$plus=0;
 		}elseif($especializacion=='especializacion'){
-			$plus=0.5;
+			$plus=get_option('espe')/100;
 		}
 		elseif($especializacion=='maestria'){
-			$plus=0.7;
+			$plus=get_option('maestria')/100;
 		}
 		elseif($especializacion=='doctorado'){
-			$plus=0.17;
+			$plus=get_option('doctorado')/100;
 		}
 		switch ($dedicacion) {
 			case 'simple':
 				if($_POST['categoria']=='titular'){
-					$inicial=5641.43;
-					$codigo=35;
+					$inicial=get_option('pt1');
+					$codigo=get_option('apt1');
 					$garantia=956.17;
 				}elseif($_POST['categoria']=='asociado'){
-					$inicial=5048.68;
-					$codigo=33;
+					$inicial=get_option('pa1');
+					$codigo=get_option('apa1');
 					$garantia=855.71;
 				}elseif($_POST['categoria']=='adjunto'){
-					$inicial=4455.92;
-					$codigo=29;
-					$garantia=755.24;
+					$inicial=get_option('pad1');
+					$codigo=get_option('apad1');
+					$garantia=get_option('');
 				}elseif($_POST['categoria']=='jtp'){
-					$inicial=3863.15;
-					$codigo=26;
+					$inicial=get_option('jtp1');
+					$codigo=get_option('ajtp1');
 					$garantia=654.77;
 				}elseif($_POST['categoria']=='ay1'){
-					$inicial=3270.39;
-					$codigo=22;
+					$inicial=get_option('ay12');
+					$codigo=get_option('aay12');
 					$garantia=554.30;
 				}elseif($_POST['categoria']=='ay2'){
-					$inicial=2616.32;
-					$codigo=20;
+					$inicial=get_option('ay2');
+					$codigo=get_option('aay2');
 					$garantia=443.44;
 				}
 				break;
 			case 'semiexclusiva':
 				if($_POST['categoria']=='titular'){
-					$inicial=9561.87;
-					$codigo=107;
+					$inicial=get_option('pt2');
+					$codigo=get_option('apt2');
 					$garantia=1912.37;
 				}elseif($_POST['categoria']=='asociado'){
-					$inicial=8557.18;
-					$codigo=101;
+					$inicial=get_option('pa2');
+					$codigo=get_option('apa2');
 					$garantia=1711.44;
 				}elseif($_POST['categoria']=='adjunto'){
-					$inicial=7552.49;
-					$codigo=88;
+					$inicial=get_option('pad2');
+					$codigo=get_option('apad2');
 					$garantia=1510.50;
 				}elseif($_POST['categoria']=='jtp'){
-					$inicial=6547.80;
-					$codigo=77;
+					$inicial=get_option('jtp1');
+					$codigo=get_option('ajtp1');
 					$garantia=1309.56;
 				}elseif($_POST['categoria']=='ay1'){
-					$inicial=5543.11;
-					$codigo=70;
+					$inicial=get_option('ay12');
+					$codigo=get_option('aay12');
 					$garantia=1108.62;
 				}
 				break;
 			case 'exclusiva':
 				if($_POST['categoria']=='titular'){
-					$inicial=19123.71;
-					$codigo=245;
+					$inicial=get_option('pt3');
+					$codigo=get_option('pt3');
 					$garantia=3824.74;
 				}elseif($_POST['categoria']=='asociado'){
-					$inicial=17114.33;
-					$codigo=230;
+					$inicial=get_option('pa3');
+					$codigo=get_option('apa3');
 					$garantia=3422.87;
 				}elseif($_POST['categoria']=='adjunto'){
-					$inicial=15104.96;
-					$codigo=200;
+					$inicial=get_option('pad3');
+					$codigo=get_option('apad3');
 					$garantia=3020.99;
 				}elseif($_POST['categoria']=='jtp'){
-					$inicial=13095.58;
-					$codigo=175;
+					$inicial=get_option('jtp3');
+					$codigo=get_option('ajtp3');
 					$garantia=2619.12;
 				}elseif($_POST['categoria']=='ay1'){
-					$inicial=11086.21;
-					$codigo=158;
+					$inicial=get_option('ay13');
+					$codigo=get_option('aay13');
 					$garantia=2217.24;
 				}
 				break;
@@ -119,9 +120,9 @@ Debe tenerse en cuenta que algunos items que no han sido contemplados, como la i
 		$jubilacion=$basico*0.13;
 		$pami=$basico*0.03;
 		$obrasocial=$basico*0.03;
-		$prestaciones=50;
+		$prestaciones=get_option('prestaciones');
 		$complementaria=$basico*0.045;
-		$seguro=11.40;
+		$seguro=get_option('segurodevida');
 		if($_POST['afiliacion']=='si'){
 			$agd=0.01;
 		}else{
