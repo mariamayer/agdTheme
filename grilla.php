@@ -36,77 +36,71 @@ Debe tenerse en cuenta que algunos items que no han sido contemplados, como la i
 			$plus=get_option('doctorado')/100;
 		}
 		switch ($dedicacion) {
-			case 'simple':
+			case 'exclusiva':
+				$gsalarial=get_option('gexclusiva');
 				if($_POST['categoria']=='titular'){
 					$inicial=get_option('pt1');
 					$codigo=get_option('apt1');
-					$garantia=956.17;
 				}elseif($_POST['categoria']=='asociado'){
 					$inicial=get_option('pa1');
 					$codigo=get_option('apa1');
-					$garantia=855.71;
 				}elseif($_POST['categoria']=='adjunto'){
 					$inicial=get_option('pad1');
 					$codigo=get_option('apad1');
-					$garantia=get_option('');
 				}elseif($_POST['categoria']=='jtp'){
 					$inicial=get_option('jtp1');
 					$codigo=get_option('ajtp1');
-					$garantia=654.77;
 				}elseif($_POST['categoria']=='ay1'){
 					$inicial=get_option('ay12');
 					$codigo=get_option('aay12');
-					$garantia=554.30;
 				}elseif($_POST['categoria']=='ay2'){
 					$inicial=get_option('ay2');
 					$codigo=get_option('aay2');
-					$garantia=443.44;
 				}
 				break;
 			case 'semiexclusiva':
+				$gsalarial=get_option('gsemi');
 				if($_POST['categoria']=='titular'){
 					$inicial=get_option('pt2');
 					$codigo=get_option('apt2');
-					$garantia=1912.37;
 				}elseif($_POST['categoria']=='asociado'){
 					$inicial=get_option('pa2');
 					$codigo=get_option('apa2');
-					$garantia=1711.44;
 				}elseif($_POST['categoria']=='adjunto'){
 					$inicial=get_option('pad2');
 					$codigo=get_option('apad2');
-					$garantia=1510.50;
+					
 				}elseif($_POST['categoria']=='jtp'){
 					$inicial=get_option('jtp1');
 					$codigo=get_option('ajtp1');
-					$garantia=1309.56;
+					
 				}elseif($_POST['categoria']=='ay1'){
 					$inicial=get_option('ay12');
 					$codigo=get_option('aay12');
-					$garantia=1108.62;
+					
 				}
 				break;
-			case 'exclusiva':
+			case 'simple':
+				$gsalarial=get_option('gsimple');
 				if($_POST['categoria']=='titular'){
 					$inicial=get_option('pt3');
 					$codigo=get_option('pt3');
-					$garantia=3824.74;
+					
 				}elseif($_POST['categoria']=='asociado'){
 					$inicial=get_option('pa3');
 					$codigo=get_option('apa3');
-					$garantia=3422.87;
+					
 				}elseif($_POST['categoria']=='adjunto'){
 					$inicial=get_option('pad3');
 					$codigo=get_option('apad3');
-					$garantia=3020.99;
+					
 				}elseif($_POST['categoria']=='jtp'){
 					$inicial=get_option('jtp3');
 					$codigo=get_option('ajtp3');
-					$garantia=2619.12;
+					
 				}elseif($_POST['categoria']=='ay1'){
 					$inicial=get_option('ay13');
 					$codigo=get_option('aay13');
-					$garantia=2217.24;
 				}
 				break;
 		}
@@ -114,14 +108,14 @@ Debe tenerse en cuenta que algunos items que no han sido contemplados, como la i
 		//SUMAS
 		$antiguedad=$inicial*$_POST['antiguedad'];
 		$titulo=$inicial*$plus;
-
 		$basico=$antiguedad+$inicial;
+
 		//RESTAS
 		$jubilacion=$basico*0.13;
 		$pami=$basico*0.03;
 		$obrasocial=$basico*0.03;
 		$prestaciones=get_option('prestaciones');
-		$complementaria=$basico*0.045;
+		$dosuba=get_option('garantia');
 		$seguro=get_option('segurodevida');
 		if($_POST['afiliacion']=='si'){
 			$agd=0.01;
@@ -130,21 +124,20 @@ Debe tenerse en cuenta que algunos items que no han sido contemplados, como la i
 		}
 		$afiliado=$basico*$agd;
 
-		//RESULTADO SUMA
-		$suma=$codigo+$titulo+$antiguedad;
-
-		//RESULTADO RESTA
-		$resta=$jubilacion+$pami+$obrasocial+$prestaciones+$seguro+$complementaria+$afiliado;
-
-	
-		if($_POST['antiguedad']=='0'){
-			$resultado=$inicial+$suma-$resta+$garantia;
+		$sumagarantia=($inicial+$titulo+$antiguedad)*0.81;
+		if($sumagarantia<$gsalarial && $_POST['categoria']!='ay2'){
+			$garantia=$gsalarial-$sumagarantia;
 		}else{
-			$resultado=$inicial+$suma-$resta;
+			$garantia=0;
 		}
 
-		echo '<p><hr></p>';
+		//RESULTADO SUMA
+		$suma=$codigo+$titulo+$antiguedad+$garantia;
+		//RESULTADO RESTA
+		$resta=$jubilacion+$pami+$obrasocial+$prestaciones+$seguro+$afiliado+$dosuba;
+		$resultado=$inicial+$suma-$resta;
 
+		echo '<p><hr></p>';
 		echo '<h2 style="color:#e31f26">Estimación Sueldo Neto: $ '.number_format((float)$resultado, 2, '.', '').'</h2>';
 
 

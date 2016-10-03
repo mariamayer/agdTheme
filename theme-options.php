@@ -51,6 +51,9 @@ function registrar_simulador_salarial() {
 	register_setting( 'simulador_salarial-settings-group', 'espe' );
 	register_setting( 'simulador_salarial-settings-group', 'doctorado' );
 	register_setting( 'simulador_salarial-settings-group', 'maestria' );
+    register_setting( 'simulador_salarial-settings-group', 'gsimple' );
+    register_setting( 'simulador_salarial-settings-group', 'gsemi' );
+    register_setting( 'simulador_salarial-settings-group', 'gexclusiva' );
 
 }
 
@@ -337,6 +340,25 @@ function my_cool_plugin_settings_page() {
 
         <tr valign="top">
         <td>
+        <h3>Garantía Salarial</h3>
+        </td>
+        </tr>
+
+        <tr valign="top">
+        <th scope="row">Simple</th>
+        <td>$ <input type="text" name="gsimple" value="<?php echo esc_attr( get_option('gsimple') ); ?>" /></td>
+        </tr>
+        <tr valign="top">
+        <th scope="row">Semi-exclusiva</th>
+        <td>$ <input type="text" name="gsemi" value="<?php echo esc_attr( get_option('gsemi') ); ?>" /></td>
+        </tr>
+        <tr valign="top">
+        <th scope="row">Exclusiva</th>
+        <td>$ <input type="text" name="gexclusiva" value="<?php echo esc_attr( get_option('gexclusiva') ); ?>" /></td>
+        </tr>
+
+        <tr valign="top">
+        <td>
         <h3>Link al PDF</h3>
         </td>
         </tr>
@@ -474,5 +496,14 @@ function my_cool_plugin_settings_page() {
  	if(isset($_POST['maestria'])){
  		update_option('maestria',$_POST['maestria']);
  	}
+    if(isset($_POST['gsimple'])){
+        update_option('gsimple',$_POST['gsimple']);
+    }
+    if(isset($_POST['gsemi'])){
+        update_option('gsemi',$_POST['gsemi']);
+    }
+    if(isset($_POST['gexclusiva'])){
+        update_option('gexclusiva',$_POST['gexclusiva']);
+    }
 
 } ?>

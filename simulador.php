@@ -11,7 +11,7 @@ get_header(); ?>
 		<h1 class="titulo-pag">Grilla Salarial</h1>
 		<p class="cuerpo">Elaboramos el presente simulador con el objetivo de brindar a los compañera/os una herramienta amigable que oriente el monto que debemos percibir como salario. 
 Debe tenerse en cuenta que algunos items que no han sido contemplados, como la imposición del impuesto a las ganancias, asignaciones familiares, etc.<br>
-		<a class="vinculo" href="http://agduba.org.ar/wp-content/uploads/grilla_salarial_docente_noviembre_2015.pdf" target="_blank"> Aqui </a> puede consultarse la grilla salarial vigente a la fecha para verificar cada uno de los items en detalle.<br>
+		<a class="vinculo" href="<?php echo esc_attr( get_option('pdf') ); ?>" target="_blank"> Aqui </a> puede consultarse la grilla salarial vigente a la fecha para verificar cada uno de los items en detalle.<br>
 		<a class="vinculo" href="http://agduba.org.ar/recibo-de-sueldo/" target="_blank"> Aqui </a> puede encontrar una guía sobre como leer el recibo de sueldo.<br> <br></p>
 
 
