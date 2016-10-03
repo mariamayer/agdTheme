@@ -114,6 +114,7 @@ Debe tenerse en cuenta que algunos items que no han sido contemplados, como la i
 		$jubilacion=$basico*0.13;
 		$pami=$basico*0.03;
 		$obrasocial=$basico*0.03;
+		$complementaria=$basico*0.045;
 		$prestaciones=get_option('prestaciones');
 		$dosuba=get_option('garantia');
 		$seguro=get_option('segurodevida');
@@ -134,7 +135,7 @@ Debe tenerse en cuenta que algunos items que no han sido contemplados, como la i
 		//RESULTADO SUMA
 		$suma=$codigo+$titulo+$antiguedad+$garantia;
 		//RESULTADO RESTA
-		$resta=$jubilacion+$pami+$obrasocial+$prestaciones+$seguro+$afiliado+$dosuba;
+		$resta=$jubilacion+$pami+$obrasocial+$prestaciones+$seguro+$afiliado+$complementaria+$dosuba;
 		$resultado=$inicial+$suma-$resta;
 
 		echo '<p><hr></p>';
