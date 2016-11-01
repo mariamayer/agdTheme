@@ -3,7 +3,14 @@
 Template name: Simulador
 */
 get_header(); ?>
-
+<script type="text/javascript">
+	function validateForm() {
+	    if(jQuery('.categoria').val()=='ay2' && jQuery('.dedicacion').val()!='simple'){
+			alert("Error: No existe la dedicación para seleccionada para Ayudante 2da");
+			return false;
+		}
+	}
+</script>
 <div class="container body">
 <div class="col-md-12">
 		<section class="seccion-area">
@@ -15,7 +22,7 @@ Debe tenerse en cuenta que algunos items que no han sido contemplados, como la i
 		<a class="vinculo" href="http://agduba.org.ar/recibo-de-sueldo/" target="_blank"> Aqui </a> puede encontrar una guía sobre como leer el recibo de sueldo.<br> <br></p>
 
 
-				<form action="<?php echo get_home_url(); ?>/grilla/" method="post"> 
+				<form action="<?php echo get_home_url(); ?>/grilla/" method="post" onsubmit="return validateForm()"> 
 					<div >
 						
 

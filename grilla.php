@@ -53,9 +53,6 @@ Debe tenerse en cuenta que algunos items que no han sido contemplados, como la i
 				}elseif($_POST['categoria']=='ay1'){
 					$inicial=get_option('ay12');
 					$codigo=get_option('aay12');
-				}elseif($_POST['categoria']=='ay2'){
-					$inicial=get_option('ay2');
-					$codigo=get_option('aay2');
 				}
 				break;
 			case 'semiexclusiva':
@@ -101,6 +98,9 @@ Debe tenerse en cuenta que algunos items que no han sido contemplados, como la i
 				}elseif($_POST['categoria']=='ay1'){
 					$inicial=get_option('ay13');
 					$codigo=get_option('aay13');
+				}elseif($_POST['categoria']=='ay2'){
+					$inicial=get_option('ay2');
+					$codigo=get_option('aay2');
 				}
 				break;
 		}
