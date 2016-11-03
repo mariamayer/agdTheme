@@ -80,6 +80,7 @@
             <li><a href="<?php echo get_home_url(); ?>/category/obra-social/">Obra social</a></li>
             <li><a href="<?php echo get_home_url(); ?>/category/presupuesto-universitario/">Presupuesto Universitario</a></li>
             <li><a href="<?php echo get_home_url(); ?>/category/paritarias/">Negociación salarial y paritarias</a></li>
+            <li><a href="<?php echo get_home_url(); ?>/category/lucha/cctregularizacion/">CCT-Regularización</a></li>
 
           </ul>
         </li>
