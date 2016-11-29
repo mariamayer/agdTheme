@@ -115,7 +115,19 @@ Debe tenerse en cuenta que algunos items que no han sido contemplados, como la i
 		$pami=$basico*0.03;
 		$obrasocial=$basico*0.03;
 		$complementaria=$basico*0.045;
-		$prestaciones=get_option('prestaciones');
+		if($_POST['categoria']=='titular'){
+			$prestaciones=get_option('prestaciones_t');
+		}elseif($_POST['categoria']=='asociado'){
+			$prestaciones=get_option('prestaciones_a');
+		}elseif($_POST['categoria']=='adjunto'){
+			$prestaciones=get_option('prestaciones_ad');
+		}elseif($_POST['categoria']=='jtp'){
+			$prestaciones=get_option('prestaciones_jtp');
+		}elseif($_POST['categoria']=='ay1'){
+			$prestaciones=get_option('prestaciones_a1');
+		}elseif($_POST['categoria']=='ay2'){
+			$prestaciones=get_option('prestaciones_a2');
+		}
 		$dosuba=get_option('garantia');
 		$seguro=get_option('segurodevida');
 		if($_POST['afiliacion']=='si'){
@@ -158,7 +170,7 @@ Debe tenerse en cuenta que algunos items que no han sido contemplados, como la i
 
 		echo '<p>Aporte Obra Social DOSUBA (210): $ '.number_format((float)$obrasocial, 2, '.', '').'</p>';
 
-		echo '<p>DOSUBA (Garantía aporte mínimo) (207t): $ '.number_format((float)$garantia, 2, '.', '').'</p>';
+		echo '<p>DOSUBA (Garantía aporte mínimo) (207t): $ '.number_format((float)$dosuba, 2, '.', '').'</p>';
 
 		echo '<p>DOSUBA (Prestaciones) (214): $ '.number_format((float)$prestaciones, 2, '.', '').'</p>';
 
