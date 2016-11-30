@@ -44,7 +44,12 @@ function registrar_simulador_salarial() {
 	register_setting( 'simulador_salarial-settings-group', 'aay12' );
 	register_setting( 'simulador_salarial-settings-group', 'aay13' );
 	register_setting( 'simulador_salarial-settings-group', 'aay2' );
-	register_setting( 'simulador_salarial-settings-group', 'prestaciones' );
+	register_setting( 'simulador_salarial-settings-group', 'prestaciones_t' );
+    register_setting( 'simulador_salarial-settings-group', 'prestaciones_a' );
+    register_setting( 'simulador_salarial-settings-group', 'prestaciones_ad' );
+    register_setting( 'simulador_salarial-settings-group', 'prestaciones_jtp' );
+    register_setting( 'simulador_salarial-settings-group', 'prestaciones_a1' );
+    register_setting( 'simulador_salarial-settings-group', 'prestaciones_a2' );
 	register_setting( 'simulador_salarial-settings-group', 'garantia' );
 	register_setting( 'simulador_salarial-settings-group', 'segurodevida' );
 	register_setting( 'simulador_salarial-settings-group', 'pdf' );
@@ -323,8 +328,28 @@ function my_cool_plugin_settings_page() {
         <td>$ <input type="text" name="garantia" value="<?php echo esc_attr( get_option('garantia') ); ?>" /></td>
         </tr>
         <tr valign="top">
-        <th scope="row">Prestaciones Alto Costo/Baja Incidencia (214)</th>
-        <td>$ <input type="text" name="prestaciones" value="<?php echo esc_attr( get_option('prestaciones') ); ?>" /></td>
+        <th scope="row">Prestaciones Alto Costo/Baja Incidencia (214) - Titular</th>
+        <td>$ <input type="text" name="prestaciones_t" value="<?php echo esc_attr( get_option('prestaciones_t') ); ?>" /></td>
+        </tr>
+        <tr valign="top">
+        <th scope="row">Prestaciones Alto Costo/Baja Incidencia (214) - Asociado</th>
+        <td>$ <input type="text" name="prestaciones_a" value="<?php echo esc_attr( get_option('prestaciones_a') ); ?>" /></td>
+        </tr>
+        <tr valign="top">
+        <th scope="row">Prestaciones Alto Costo/Baja Incidencia (214) - Adjunto</th>
+        <td>$ <input type="text" name="prestaciones_ad" value="<?php echo esc_attr( get_option('prestaciones_ad') ); ?>" /></td>
+        </tr>
+        <tr valign="top">
+        <th scope="row">Prestaciones Alto Costo/Baja Incidencia (214) - Jefe de Trabajos Prácticos</th>
+        <td>$ <input type="text" name="prestaciones_jtp" value="<?php echo esc_attr( get_option('prestaciones_jtp') ); ?>" /></td>
+        </tr>
+        <tr valign="top">
+        <th scope="row">Prestaciones Alto Costo/Baja Incidencia (214) - Ayudante Primera</th>
+        <td>$ <input type="text" name="prestaciones_a1" value="<?php echo esc_attr( get_option('prestaciones_a1') ); ?>" /></td>
+        </tr>
+        <tr valign="top">
+        <th scope="row">Prestaciones Alto Costo/Baja Incidencia (214) Ayudante Segunda</th>
+        <td>$ <input type="text" name="prestaciones_a2" value="<?php echo esc_attr( get_option('prestaciones_a2') ); ?>" /></td>
         </tr>
         
         <tr valign="top">
@@ -478,9 +503,25 @@ function my_cool_plugin_settings_page() {
 	if(isset($_POST['segurodevida'])){
 		update_option('segurodevida',$_POST['segurodevida']);
 	}
-	if(isset($_POST['prestaciones'])){
-		update_option('prestaciones',$_POST['prestaciones']);
+	if(isset($_POST['prestaciones_a'])){
+		update_option('prestaciones_a',$_POST['prestaciones_a']);
 	}
+    if(isset($_POST['prestaciones_ad'])){
+        update_option('prestaciones_ad',$_POST['prestaciones_ad']);
+    }
+    if(isset($_POST['prestaciones_t'])){
+        update_option('prestaciones_t',$_POST['prestaciones_t']);
+    }
+    if(isset($_POST['prestaciones_jtp'])){
+        update_option('prestaciones_jtp',$_POST['prestaciones_jtp']);
+    }
+    if(isset($_POST['prestaciones_a1'])){
+        update_option('prestaciones_a1',$_POST['prestaciones_a1']);
+    }
+    if(isset($_POST['prestaciones_a2'])){
+        update_option('prestaciones_a2',$_POST['prestaciones_a2']);
+    }
+
 	if(isset($_POST['garantia'])){
 		update_option('garantia',$_POST['garantia']);
 	}
